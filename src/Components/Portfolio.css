@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: "poppins";
+scroll-behavior: smooth;
+/* background-color: black; */
+background-color: #0f0a0a;
+color: #fff;
+}
+
+.container h1{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.headers {
+  margin-left: 7.5rem;
+  font-weight: 900;
+}
+
+.container a{
+  transition: 0.5s ease-in-out;
+  /* transform: translateY(-100px); */
+  /* opacity: 0; */
+  /* animation: Topslide; */
+}
+
+.WebDeveloper{
+  margin-left: 1rem;
+  font-weight: 600;
+
+}
+
+.MBA{
+  border-left: 2px solid #ff00ee;
+  margin-left: 0.7rem;
+  height: 5rem;
+}
+
+.TextAll{
+  margin-left: 2.5rem;
+}
+
+.EducationIcon{
+  font-size: 1.5rem;
+  border-left: 2px solid #ff00ee;
+  border-radius: 5rem;
+  background-color: black;
+  color: 2px solid #ff00ee;
+}
+
+.EduEx{
+  margin-left: 2rem;
+}
+
+.Skills{ 
+  border: 2px solid #ff00ee;
+  height: 26.5rem;
+  border-radius: 5%;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.Skills h4{
+  font-weight: 900;
+}
+
+
+.FrontEndSkills{
+  margin: 2rem;
+}
+
+.FrontEndSkills h5{
+  font-weight: 620;
+}
+
+.Footer{
+  border-top: 0.1px solid rgb(50, 49, 49);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer i{
+  color: red;
+  }
+
+
+  /* Contact ME: */
+
+  .ContactMe input{
+    height: 3rem;
+    width: 21rem;
+  border-radius: 7px;
+  border: 2px solid #ff00ee;
+  background-color: rgb(40, 40, 40);
+  margin-left: 2rem;
+  }
+
+  .ContactMe2 input{
+    height: 3rem;
+    width: 21rem;
+  border-radius: 7px;
+  opacity: 1;
+  background-color: rgb(40, 40, 40);
+  border: 2px solid #ff00ee;
+  margin-left: 2rem;
+  }
+  
+
+  .ContactMe4 textarea{
+    width: 21rem;
+  background-color: rgb(40, 40, 40);
+  border: 2px solid #ff00ee;
+  border-radius: 7px;
+  margin-left: 1rem;
+  }
+
+  .ContactMe3 input{
+
+    height: 3rem;
+    width: 9rem;
+  border-radius: 7px;
+  background-color: rgb(46, 46, 170);
+  border: 2px solid #ff00ee;
+  }
+
+  .ContactMe3 input:hover{
+    background-color: rgb(72, 72, 220);
+    }
+
+    
+    .ContactMe4 {
+  
+      display: flex;
+    justify-content: center;
+    }
+    
+    .ContactMe3 {
+      display: flex;
+    justify-content: center;
+    }
+    
+
+    .ContactContainer{
+      display: flex;
+      justify-content: center;
+    }
+
+
+    /* SOCIALS: */
+
+    .Socials2{
+      /* margin-top: 1rem; */
+      /* margin-bottom: 1.2rem; */
+      display: flex;
+      justify-content: center;
+      /* margin-left: 2.2rem; */
+    }
+    
+
+    .socialsIcons2{
+      margin: 0.75rem;
+      font-size: 1.9rem;
+      color: #ff00ee;
+    }
+    
+
+
+    /* About ME: */
+
+    .Girish-Pic{
+      border-radius: 50%;
+      width: 16rem;
+       height:16rem;
+       /* margin-top: 1.5rem; */
+       background-image: url(./Imgs/Girish2.jpg) ;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+filter: drop-shadow(0 0 7rem #ff00ee);
+    }
+    
+    .AbtMe2{
+      /* margin-top: 0.8rem; */
+      font-weight: 600;
+      opacity: 0;
+    
+    }
+
+      
+  
+
+    .AbtMe3{
+      /* margin-top: 0.8rem; */
+      font-weight: 600;
+      width: 100%;
+      margin-left: 0.3rem;
+      opacity: -5;
+      
+    }
+    
+   
+    
+    .socialsIcons{
+
+      margin: 0.75rem;
+      font-size: 1.7rem;
+      color: #ff00ee;
+    }
+
+
+    
+.PersonalInfo{
+  margin-left: 0.3rem;
+  /* display: flex;
+  justify-content:space-around; */
+}
+
+.EducationExp{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Header Section:  */
+
+.Header{
+  background-image: url('./Imgs/bg1.png');
+  height: 350px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin-top: 8rem; */
+  /* margin-left: 2rem; */
+ 
+}
+
+.TopMargin{
+  margin-top: 3rem;
+}
+
+
+.right-section{
+  margin-top: 4.5rem;
+}
+
+
+.HeaderContainers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+
+
+.left-section2{
+  font-size: 2.1rem;
+
+}
+
+.left-section3{
+  font-size: 1.2rem;
+  font-weight: 510;
+}
+
+
+.button{
+  width: 8rem;
+  margin-right: 0.45rem;
+  
+}
+
+.button2{
+  width: 8rem;
+  margin-top: 0.8rem;
+}
+
+.yellow{
+  color: rgb(213, 213, 7);
+font-weight: 700;
+}
+
+.left-section {
+  /* background-color: antiquewhite; */
+  font-size: 2.5rem;
+  /* margin-top: 8rem; */
+/* margin: 3.7rem; */
+}
+
+
+
+.Skill1{
+  display: flex;
+  justify-content: center;
+}
+
+
+.Left{
+  margin-left: 1.25rem;
+}
+
+
+/* Navbar Component: */
+
+.navbar2{  border-bottom: .2rem solid rgba(255, 255, 255, .1); 
+}
+
+#navbarmanual{
+  position: fixed;
+  min-width: 100%;
+  z-index: 100;
+}
+
+.active2{
+  color: #ff00ee;
+}
+
+.navbarmanual2 li{
+ margin-left: 1.25rem;
+ font-weight: 600;
+}
+
+
+.WebDeveloper{
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+
+
+.togglerIcon{
+  margin-right: 1rem;
+}
+
+
+
+.animation{
+
+  animation: top 2s ease forwards;
+}
+
+@keyframes top {
+    0% {
+       transform: translateY(-100px);
+       opacity: 0;
+    }
+
+    100% {
+     transform: translateY(0px);
+     opacity: 1;
+    }
+  
+}
+
+.animationleft {
+
+  animation: left 1s ease-out forwards;
+}
+
+@keyframes left {
+  0% {
+     transform: translateX(-100px);
+     opacity: 0;
+  }
+
+  100% {
+   transform: translateX(0px);
+   opacity: 1;
+  }
+
+}
+
+.animationtop {
+
+  animation: top 1s ease-out forwards;
+}
+
+
+@keyframes top {
+  0% {
+     transform: translateY(-100px);
+     opacity: 0;
+  }
+
+  100% {
+   transform: translateY(0px);
+   opacity: 1;
+  }
+
+}
+
+
+
+.animationbuttom {
+
+  animation: buttom 1s ease-out forwards;
+}
+
+
+@keyframes buttom {
+  0% {
+     transform: translateY(100px);
+     opacity: 0;
+  }
+
+  100% {
+   transform: translateY(0px);
+   opacity: 1;
+  }
+
+}
+
+
+.animationright {
+
+  animation: right 1s ease-out forwards;
+}
+
+@keyframes right {
+  0% {
+     transform: translateX(100px);
+     opacity: 0;
+  }
+
+  100% {
+   transform: translateX(0px);
+   opacity: 1;
+  }
+
+}
+
+
+
+.animationimage {
+
+  animation: scale 1.2s ease-in-out forwards;
+}
+
+@keyframes scale {
+  0% {
+  scale: 0;
+  }
+
+  100% {
+   scale: 1;
+  }
+
+}
+
+.formContainer{
+  display: flex;
+  justify-content: center;
+}
