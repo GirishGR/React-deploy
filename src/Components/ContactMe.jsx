@@ -72,14 +72,14 @@ function ContactMe() {
       <form  action="">
 
         <div className="row formContainer">
-          <div className="col-lg-4 col-md-10 col-sm-12">
+          <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
               <input className='mb-3 mt-4' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} />
               <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} />
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-10 col-sm-10">
+          <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
               <input className='mb-3 mt-4' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} />
               <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} />
