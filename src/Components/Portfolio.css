@@ -94,6 +94,7 @@ color: #fff;
   border-radius: 7px;
   border: 2px solid #ff00ee;
   background-color: rgb(40, 40, 40);
+  opacity: 1;
   /* margin-left: 1rem; */
   }
 
@@ -104,7 +105,7 @@ color: #fff;
   opacity: 1;
   background-color: rgb(40, 40, 40);
   border: 2px solid #ff00ee;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   }
   
 
@@ -117,7 +118,6 @@ color: #fff;
   }
 
   .ContactMe3 input{
-
     height: 3rem;
     width: 9rem;
   border-radius: 7px;
@@ -305,6 +305,12 @@ font-weight: 700;
 
 /* Navbar Component: */
 
+.navbar{
+  position: fixed;
+  min-width: 100%;
+  z-index: 100;
+}
+
 .navbar2{  border-bottom: .2rem solid rgba(255, 255, 255, .1); 
 }
 
@@ -325,7 +331,7 @@ font-weight: 700;
 
 
 .WebDeveloper{
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   font-weight: 700;
   font-size: 27px;
 }

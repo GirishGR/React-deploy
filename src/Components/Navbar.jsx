@@ -29,7 +29,7 @@ return(
 
     <div className="row ">
 
-      <div className="col-12 ">
+      <div className="col-12">
 
       <nav className="navbar navbar-expand-lg " toggle={toggle} id="navbarmanual" data-bs-theme="dark">
     <div className="container-fluid togglerIcon">
