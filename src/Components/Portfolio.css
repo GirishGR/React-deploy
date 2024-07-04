@@ -58,7 +58,7 @@ color: #fff;
   height: 26.5rem;
   border-radius: 5%;
   /* width: 90%; */
-  margin: 2.5%;
+  margin: 2%;
   margin-bottom: 2.5rem;
 }
 
@@ -342,7 +342,7 @@ font-weight: 700;
 
 
 .WebDeveloper{
-  margin: 0;
+  margin:0;
   font-weight: 700;
   font-size: 27px;
 }
@@ -350,7 +350,7 @@ font-weight: 700;
 
 
 .togglerIcon{
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 
