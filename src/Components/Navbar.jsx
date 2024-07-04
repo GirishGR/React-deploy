@@ -55,26 +55,24 @@ return(
         
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
           <li className="nav-item ">
-          
 
-                <> <a className="nav-link active animationtop" aria-current="page" href="#navbar"  >Home</a></> 
-          
+                 <a className="nav-link  animationtop " aria-current="page" href="#navbar"  >Home</a>
            
           </li>
           <li className="nav-item">
-            <a className="nav-link  active animationtop " href="#about">About Me</a>
+            <a className="nav-link   animationtop " href="#about">About Me</a>
           </li> 
 
           <li className="nav-item">
-            <a className="nav-link  active animationtop " href="#education2">Education</a>
+            <a className="nav-link   animationtop " href="#education2">Education</a>
           </li>
   
           <li className="nav-item">
-            <a className="nav-link  active animationtop " href="#skill2">Skills</a>
+            <a className="nav-link   animationtop " href="#skill2">Skills</a>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link  active animationtop" href="#ContactMe2">Contact Me</a>
+            <a className="nav-link  animationtop" href="#ContactMe2">Contact Me</a>
           </li>
      </ul>
       </div>

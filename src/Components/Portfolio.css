@@ -50,24 +50,18 @@ color: #fff;
 }
 
 .EduEx{
-  /* margin-left: 2rem; */
+  margin-left: 0.7rem;
 }
 
 .Skills{ 
   border: 2px solid #ff00ee;
   height: 26.5rem;
   border-radius: 5%;
-  /* margin-left: 2rem; */
+  margin-left: 0.7rem;
   margin-bottom: 2.5rem;
 }
 
-.Skills2{
-  border: 2px solid #ff00ee;
-  height: 26.5rem;
-  border-radius: 5%;
-  margin-left: 2rem;
-  margin-bottom: 2.5rem;
-}
+
 
 .Skills h4{
   font-weight: 900;
@@ -279,6 +273,7 @@ filter: drop-shadow(0 0 7rem #ff00ee);
   width: 8rem;
   margin-right: 0.45rem;
   
+  
 }
 
 .button2{
@@ -332,13 +327,21 @@ font-weight: 700;
 }
 
 .navbarmanual2 li{
- margin-left: 1.25rem;
+ margin-left: 1.9rem;
  font-weight: 600;
 }
 
+.navbarmanual2 a{
+ color: white;
+ }
+
+ .navbarmanual2 a:hover{
+  color:#ff00ee
+  }
+
 
 .WebDeveloper{
-  /* margin-left: 1rem; */
+  margin: 0;
   font-weight: 700;
   font-size: 27px;
 }
