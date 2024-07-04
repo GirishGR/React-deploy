@@ -51,7 +51,7 @@ function AboutMe(){
               <p>Qualification : <b>MBA</b></p>
             </div>
       
-            <div className="col col-lg-3 col-sm-10 col-md-4 text-start PersonalInfo animationright">
+            <div className="col col-lg-3 col-md-4 text-start PersonalInfo animationright">
       
       <div>
         <p>Address : <b>Bengaluru</b></p>

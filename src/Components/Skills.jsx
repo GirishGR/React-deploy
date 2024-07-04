@@ -10,7 +10,7 @@ function Skills() {
       <div className="row Skill1">
 
         {/* FRONT END DETAILS */}
-        <div className="col col-lg-5 col-md-5 col-10 Skills animationleft">
+        <div className="col col-lg-5 col-md-5 Skills animationleft">
 
           <h4 className="text-center mt-4">Front-End</h4>
           <div className="FrontEndSkills ">
@@ -42,7 +42,7 @@ function Skills() {
 
             {/* BACKEND DETAILS */}
 
-        <div className="col col-lg-5 col-md-5 col-10 Skills2 animationright">
+        <div className="col col-lg-5 col-md-5 Skills2 animationright">
 
           <h4 className="text-center mt-4">BackEnd & DB</h4>
 
