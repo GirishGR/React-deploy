@@ -25,7 +25,7 @@ function AboutMe(){
         <h3 className=" mt-5 AbtMe2 animationleft">Aspiring Web Developer with Front-End Skills</h3>
         <h5 className="AbtMe3 mt-3 animationright"> My journey in web development began with a curiosity to understand how technology shapes our online experiences. Over the months, I've honed my skills in front-end skills like HTML, CSS, JAVASCRIPT, REACTJS, embracing new technologies and best practices along the way.</h5>
         
-        <div className="Socials mt-3 mb-2">
+        <div className="Socials mt-4 mb-3">
           <a href="https://github.com/GirishGR" ><i className="bi bi-github socialsIcons"></i></a>
           <a href="https://www.linkedin.com/in/girish-g-r-114575219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i className="bi bi-linkedin socialsIcons"></i></a>
           <a href="https://www.instagram.com/im_girishgr?igsh=MXdhbHJ1eGNreWdxcg=="><i className="bi bi-instagram socialsIcons"></i></a>
@@ -42,7 +42,7 @@ function AboutMe(){
         <div className="container text-center ">
           <h2><b className='animationtop'>Personal Infos</b></h2>
           <div className="row justify-content-md-center PersonalInfo">
-            <div className="col col-lg-3 col-md-4 ml-2 text-start animationleft
+            <div className="col col-lg-3 col-md-4 text-start animationleft
             ">
               <p>Name : <b>Girish GR</b></p>
               <p>Age : <b>29 years</b></p>
@@ -51,7 +51,7 @@ function AboutMe(){
               <p>Qualification : <b>MBA</b></p>
             </div>
       
-            <div className="col col-lg-3 col-sm-10 col-md-3 text-start PersonalInfo animationright">
+            <div className="col col-lg-3 col-sm-10 col-md-4 text-start PersonalInfo animationright">
       
       <div>
         <p>Address : <b>Bengaluru</b></p>
@@ -64,10 +64,10 @@ function AboutMe(){
           </div>
 
       </div>
-      <button type="button" className="btn btn-info mt-2 mb-5" id="KnowMore" onClick={()=>{setKnowMore(false)}} > Close</button>
+      <button type="button" className="btn btn-info mt-3 mb-5" id="KnowMore" onClick={()=>{setKnowMore(false)}} > Close</button>
 
     </div> </> : <>
-    <button type="button" className="btn btn-info mt- mb-5" id="education2" onClick={()=>{setKnowMore(true)}} > Know More</button>
+    <button type="button" className="btn btn-info mt-1 mb-5" id="education2" onClick={()=>{setKnowMore(true)}} > Know More</button>
     </>
 }
   </div>

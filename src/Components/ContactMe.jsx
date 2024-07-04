@@ -23,7 +23,7 @@ function ContactMe() {
     event.preventDefault();
 
     // console.log(JSON.stringify(contactDetails))
-    await axios.post('http://localhost:3006/users', contactDetails)
+    await axios.post('http://localhost:3005/users', contactDetails)
       .then((response)  => { console.log(response.JSON()) })
       .catch((err) => {
         console.log(err)

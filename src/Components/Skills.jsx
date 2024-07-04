@@ -16,7 +16,7 @@ function Skills() {
           <div className="FrontEndSkills ">
             <h5 className="text-start">HTML</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 275 }}>75%</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 265 }}>75%</div>
             </div></div>
 
           <div className="FrontEndSkills">
@@ -42,7 +42,7 @@ function Skills() {
 
             {/* BACKEND DETAILS */}
 
-        <div className="col col-lg-5 col-md-5 col-10 Skills animationright">
+        <div className="col col-lg-5 col-md-5 col-10 Skills2 animationright">
 
           <h4 className="text-center mt-4">BackEnd & DB</h4>
 

@@ -50,10 +50,18 @@ color: #fff;
 }
 
 .EduEx{
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .Skills{ 
+  border: 2px solid #ff00ee;
+  height: 26.5rem;
+  border-radius: 5%;
+  /* margin-left: 2rem; */
+  margin-bottom: 2.5rem;
+}
+
+.Skills2{
   border: 2px solid #ff00ee;
   height: 26.5rem;
   border-radius: 5%;
@@ -212,7 +220,7 @@ filter: drop-shadow(0 0 7rem #ff00ee);
 
     
 .PersonalInfo{
-  margin-left: 0.3rem;
+  /* margin-left: 0.3rem; */
   /* display: flex;
   justify-content:space-around; */
 }
@@ -311,8 +319,7 @@ font-weight: 700;
   z-index: 100;
 }
 
-.navbar2{  border-bottom: .2rem solid rgba(255, 255, 255, .1); 
-}
+
 
 #navbarmanual{
   position: fixed;
