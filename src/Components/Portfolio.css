@@ -6,6 +6,9 @@ scroll-behavior: smooth;
 /* background-color: black; */
 background-color: #0f0a0a;
 color: #fff;
+outline: none;
+border: none;
+box-sizing: border-box;
 }
 
 .container h1{
@@ -34,7 +37,7 @@ color: #fff;
 .MBA{
   border-left: 2px solid #ff00ee;
   margin-left: 0.7rem;
-  /* height: 5.5rem; */
+  height: 5.5rem;
 }
 
 .TextAll{
