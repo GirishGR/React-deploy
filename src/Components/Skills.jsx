@@ -42,7 +42,7 @@ function Skills() {
 
             {/* BACKEND DETAILS */}
 
-        <div className="col col-lg-5 col-md-5 col-11 Skills animationright">
+        <div className="col col-lg-5 col-md-5 col-12 Skills animationright">
 
           <h4 className="text-center mt-4">BackEnd & DB</h4>
 
