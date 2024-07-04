@@ -34,7 +34,7 @@ color: #fff;
 .MBA{
   border-left: 2px solid #ff00ee;
   margin-left: 0.7rem;
-  height: 5rem;
+  /* height: 5.5rem; */
 }
 
 .TextAll{
@@ -350,7 +350,7 @@ font-weight: 700;
 
 
 .togglerIcon{
-  margin-right: 2rem;
+  margin-right: 1.25rem;
 }
 
 
