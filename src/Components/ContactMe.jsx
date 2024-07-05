@@ -5,6 +5,14 @@ import axios from 'axios';
 
 function ContactMe() {
 
+let [formNameMsg,setFormNameMsg] = useState(" ")
+let [formEmailMsg,setformEmailMsg] = useState(" ")
+let [formMobileMsg,setformMobileMsg] = useState(" ")
+let [formSubjectMsg,setformSubjectMsg] = useState(" ")
+let [formMessageMsg,setformMessageMsg] = useState(" ")
+
+
+
   let [contactDetails, setContactDetails] = useState({
     name: "",
     mobile: "",
@@ -66,7 +74,7 @@ function ContactMe() {
     <div className="container">
 
 
-      <h1 className="mt-5 animationtop">Contact Me</h1>
+      <h1 className="mt-5 mb-4 animationtop">Contact Me</h1>
 
 
       <form  action="">
@@ -74,26 +82,29 @@ function ContactMe() {
         <div className="row formContainer">
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
-              <input className='mb-3 mt-4' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} />
-              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} />
+              <input className='' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onFocus={()=>{setFormNameMsg("Please enter your full name")}}/>
+              <p className='FormMsgs'>{formNameMsg}</p>
+              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onFocus={()=>{setformEmailMsg("Please enter your email")}}/>
+              <p className='FormMsgs'>{formEmailMsg}</p>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
-              <input className='mb-3 mt-4' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} />
-              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} />
-
+              <input className='' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} onFocus={()=>{setformMobileMsg("Please enter your contact number")}} />
+              <p className='FormMsgs'>{formMobileMsg}</p>
+              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} onFocus={()=>{setformSubjectMsg("Please type the subject")}}/>
+              <p className='FormMsgs'>{formSubjectMsg}</p>
             </div>
 
           </div>
 
           <div className="col-12 col-md-10 ContactMe4">
 
-            <textarea className='mt-3 animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact}></textarea>
+            <textarea className=' animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact} onFocus={()=>{setformMessageMsg("Please type in your message")}} ></textarea>
           </div>
-
-          <div className="col-12 col-md-10 ContactMe3 mt-3">
+            <p className='FormMsgs text-center' >{formMessageMsg}</p>
+          <div className="col-12 col-md-10 ContactMe3 mt-2">
             <input type="submit" onClick={handleSubmit} value="Send Messsage" />
           </div>
 

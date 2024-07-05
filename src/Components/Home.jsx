@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Skills from './Skills';
 import AboutMe from './AboutMe';
 import Navigationbar from './NavigationBar';
+import Navbar from './Navbar';
 
 // import Contact from './Contact';
 
@@ -16,7 +17,8 @@ import Navigationbar from './NavigationBar';
 const Home = () => {
   return (
     <div>
-        <Navigationbar/>
+      <Navbar/>
+        {/* <Navigationbar/> */}
       <Header/>
       <AboutMe/>
       <Education/>
