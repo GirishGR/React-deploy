@@ -16,25 +16,25 @@ function Skills() {
           <div className="FrontEndSkills ">
             <h5 className="text-start">HTML</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 275 }}>75%</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "75%" }}>75%</div>
             </div></div>
 
           <div className="FrontEndSkills">
             <h5 className="text-start">CSS</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 230 }}>65%</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "65%" }}>65%</div>
             </div></div>
 
           <div className="FrontEndSkills">
             <h5 className="text-start">BootStrap</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 200 }}>50%</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "50%" }}>50%</div>
             </div></div>
 
           <div className="FrontEndSkills">
             <h5 className="text-start">Javascript & ReactJS</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 200 }}>Core</div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "50%" }}>Core</div>
             </div></div>
 
         </div>

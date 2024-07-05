@@ -17,13 +17,9 @@ return(
   <>
 
 
-  <div className="container" id='navbar'>
+ 
 
-    <div className="row ">
-
-      <div className="col-12">
-
-      <nav className="navbar navbar-expand-lg " toggle={toggle} id="navbarmanual" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg position-fixed" toggle={toggle} id="navbarmanual" data-bs-theme="dark">
     <div className="container-fluid togglerIcon">
 
       <a className="navbar-brand WebDeveloper animationleft" href="#">Girish G R</a>
@@ -42,42 +38,46 @@ return(
 
       
                   <button onClick={handleToggle} className="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span className="navbar-toggler-icon"> </span> 
+                    {toggle==false ? <> <i class="bi bi-x-lg"></i> </> :
+                        <><span className="navbar-toggler-icon"> </span></>
+                            }
                   </button>
+                  <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
+{
+  toggle==false ? <>
 
-      <div className="collapse navbar-collapse" id={!toggle ? "navbarSupportedContent"  : ""}>
-        
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
-          <li className="nav-item">
+    
+    <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
+      <li className="nav-item">
 
-                 <a className="nav-link animationtop " aria-current="page" href="#navbar"  >Home</a>
-           
-          </li>
-          <li className="nav-item">
-            <a className="nav-link animationtop " href="#about">About</a>
-          </li> 
+             <a className="nav-link animationtop " aria-current="page" href="#navbar"  >Home</a>
+       
+      </li>
+      <li className="nav-item">
+        <a className="nav-link animationtop " href="#about" >About</a>
+      </li> 
 
-          <li className="nav-item">
-            <a className="nav-link   animationtop " href="#education2">Education</a>
-          </li>
-  
-          <li className="nav-item">
-            <a className="nav-link   animationtop " href="#skill2">Skills</a>
-          </li>
+      <li className="nav-item">
+        <a className="nav-link   animationtop " href="#education2" >Education</a>
+      </li>
 
-          <li className="nav-item">
-            <a className="nav-link  animationtop" href="#ContactMe2">Contact Me</a>
-          </li>
-     </ul>
-      </div>
+      <li className="nav-item">
+        <a className="nav-link   animationtop " href="#skill2" >Skills</a>
+      </li>
+
+      <li className="nav-item">
+        <a className="nav-link  animationtop" href="#ContactMe2" >Contact Me</a>
+      </li>
+ </ul>
+  </> : <></>
+}
+</div>
     </div>
     
   </nav>
   
-      </div>
-    </div>
-  </div>
+  
 
 
 

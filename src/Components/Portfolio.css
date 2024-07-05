@@ -56,6 +56,7 @@ box-sizing: border-box;
   margin-left: 0.7rem;
 }
 
+
 .Skills{ 
   border: 2px solid #ff00ee;
   height: 26.5rem;
@@ -196,12 +197,11 @@ filter: drop-shadow(0 0 7rem #ff00ee);
     .AbtMe2{
       /* margin-top: 0.8rem; */
       font-weight: 600;
-      opacity: 0;
-    
+          opacity: 0.9;
     }
 
       
-  
+ 
 
     .AbtMe3{
       /* margin-top: 0.8rem; */
@@ -327,8 +327,8 @@ font-weight: 700;
 
 
 #navbarmanual{
-  position: fixed;
-  min-width: 100%;
+  /* position: fixed; */
+  /* min-width: 100%; */
   z-index: 100;
 }
 
@@ -359,13 +359,12 @@ font-weight: 700;
 
 
 .togglerIcon{
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 
 
 .animation{
-
   animation: top 2s ease forwards;
 }
 

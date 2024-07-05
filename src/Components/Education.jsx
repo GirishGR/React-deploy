@@ -4,10 +4,10 @@ function Education() {
 
   return<>
 
-  <div className="container " id='education'>
+  <div className="container goto" id='education'>
 
 <div className="row EducationExp">
-<h1 className="mb-5 mt-5 animationtop"> Education And Experience</h1>
+<h1 className="mb-5 mt-5  animationtop"> Education And Experience</h1>
 <div className="col col-lg-6 col-md-5 animationleft" >
 <div className='EduEx'>
       <h4 className='headers mb-3'>Education</h4>
@@ -41,7 +41,7 @@ function Education() {
 
 <div className="col col-lg-5 col-md-10  col-sm-10 EduEx animationright">
 
-<h4 className='headers mt-3 mb-3'>Experience</h4>
+<h4 className='headers  mb-3'>Experience</h4>
   
 <div className="text-start"><i className="bi bi-calendar-check-fill EducationIcon"></i></div>
 

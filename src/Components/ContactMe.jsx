@@ -83,10 +83,10 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
               
-              <input className='' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onClick={()=>{setFormNameMsg((contactDetails.name.length>0 ? "" : "Please enter your name"))}}/>
+              <input className='' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onClick={()=>{setFormNameMsg((contactDetails.name.length>0 ? "" : ""))}}/>
               <p className='FormMsgs'>{formNameMsg}</p>
 
-              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onClick={()=>{setformEmailMsg(contactDetails.email.length<=0 ? "Please enter your email" : "") }}/>
+              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onClick={()=>{setformEmailMsg(contactDetails.email.length<=0 ? "" : "") }}/>
               <p className='FormMsgs'>{formEmailMsg}</p>
 
             </div>
@@ -94,9 +94,9 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
 
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
-              <input className='' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} onClick={()=>{setformMobileMsg(contactDetails.mobile.length<10 ? "Please enter your contact number" : "")}} />
+              <input className='' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} onClick={()=>{setformMobileMsg(contactDetails.mobile.length<10 ? "" : "")}} />
               <p className='FormMsgs'>{formMobileMsg}</p> 
-              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} onClick={()=>{setformSubjectMsg(contactDetails.subject.length<=0 ? "Please type the subject" : "")}}/>
+              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} onClick={()=>{setformSubjectMsg(contactDetails.subject.length<=0 ? "" : "")}}/>
               <p className='FormMsgs'>{formSubjectMsg}</p>
             </div>
 
@@ -104,7 +104,7 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
 
           <div className="col-12 col-md-10 ContactMe4">
 
-            <textarea className=' animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact} onClick={()=>{setformMessageMsg(contactDetails.message.length>=0 ? "Please type in your message" : "")}} ></textarea>
+            <textarea className=' animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact} onClick={()=>{setformMessageMsg(contactDetails.message.length>=0 ? "" : "")}} ></textarea>
           </div>
             <p className='FormMsgs text-center' >{formMessageMsg}</p>
           <div className="col-12 col-md-10 ContactMe3 mt-2">
