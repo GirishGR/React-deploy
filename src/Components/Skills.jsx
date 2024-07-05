@@ -67,17 +67,17 @@ function Skills() {
           <div className="FrontEndSkills">
             <h5 className="text-start">MongoDB</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }} id="ContactMe2"></div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }} ></div>
             </div></div>
 
 
 
-
+<div id="ContactMe2"></div>
 
         </div>
 
       </div>
-    </div>
+    </div >
 
   </>
 }

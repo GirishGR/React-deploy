@@ -394,6 +394,16 @@ font-weight: 700;
 
 }
 
+.NavbarContainer{
+  margin-left:1.5rem ;
+  font-weight: 600;
+}
+
+
+.NavbarToggler{
+  margin-right: 1.5rem;
+}
+
 .animationtop {
 
   animation: top 1s ease-out forwards;
