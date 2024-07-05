@@ -82,10 +82,13 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
         <div className="row formContainer">
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
-              <input className='' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onFocus={()=>{setFormNameMsg("Please enter your full name")}}/>
+              
+              <input className='' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onFocus={()=>{setFormNameMsg((contactDetails.name.length>0 ? "" : "Please enter your name"))}}/>
               <p className='FormMsgs'>{formNameMsg}</p>
+
               <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onFocus={()=>{setformEmailMsg("Please enter your email")}}/>
               <p className='FormMsgs'>{formEmailMsg}</p>
+
             </div>
           </div>
 
