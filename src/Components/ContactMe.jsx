@@ -38,8 +38,9 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
       })
 
       if((contactDetails.message && contactDetails.name && contactDetails.email && contactDetails.subject && contactDetails.mobile).length == 0){
-   alert("Please fill in all the details")
-  }else{    alert("Thanks for the contact details!") }
+   alert("Please fill in all the details and Submit!")
+  }else
+  { alert("Thanks for the contact details!") }
 }
 
 
