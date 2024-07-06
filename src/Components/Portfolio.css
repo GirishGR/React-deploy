@@ -238,7 +238,7 @@ filter: drop-shadow(0 0 7rem #ff00ee);
 /* Header Section:  */
 
 .Header{
-  background-image: url('./Imgs/bg1.png');
+  /* background-image: url('./Imgs/bg1.png'); */
   height: 350px;
   width: 350px;
   background-repeat: no-repeat;
@@ -492,6 +492,42 @@ font-weight: 700;
 }
 
 
+/* MyWOrks: */
 
+.myworks{
+  border: 0.1px solid #ff00ee;
+  height: 22rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.girishportfolio{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  right: 0%;
+  top: 0%;
+  border: none;
+
+}
+
+
+
+.netflix-container{
+  height: 10%;
+  /* width: 100%; */
+  
+}
+
+.netflix-header{
+height: 10%;
+  /* border: 2px solid beige; */
+}
+
+.netflix-clone{
+  height: 88%;
+  /* border: 2px solid beige; */
+  width: 100%;
+}
 
 

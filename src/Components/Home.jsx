@@ -7,27 +7,29 @@ import Education from './Education';
 import Footer from './Footer';
 import Skills from './Skills';
 import AboutMe from './AboutMe';
-import Navigationbar from './NavigationBar';
+// import Navigationbar from './NavigationBar';
 import Navbar from './Navbar';
-
 // import Contact from './Contact';
 
 
 
 const Home = () => {
-  return (
-    <div>
+  return <>
       <Navbar/>
         {/* <Navigationbar/> */}
       <Header/>
       <AboutMe/>
       <Education/>
       <Skills/>
+
+
+
       <ContactMe/>
       <Footer/> 
+
+     
+    </>
   
-    </div>
-  )
 }
 
 export default Home;

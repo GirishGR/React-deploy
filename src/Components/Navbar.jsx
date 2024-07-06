@@ -1,30 +1,26 @@
-
-import './Portfolio.css';
+import "./Portfolio.css";
 import React, { useState } from "react";
 
+function Navbar() {
+  let [toggle, setToggle] = useState(false);
 
-function Navbar(){
+  let handleToggle = () => {
+    setToggle(!toggle);
+  };
 
-let [toggle, setToggle] = useState(false);
-
-let handleToggle = ()=>{
-  setToggle(!toggle);
-}
-
-
-return(
-
-  <>
-
-
- 
-
-      <nav className="navbar navbar-expand-lg position-fixed" toggle={toggle} id="navbarmanual" data-bs-theme="dark">
-    <div className="container-fluid togglerIcon">
-
-      <a className="navbar-brand WebDeveloper animationleft" href="#">Girish G R</a>
-
-      {/* {
+  return (
+    <>
+      <nav
+        className="navbar navbar-expand-lg position-fixed"
+        toggle={toggle}
+        id="navbarmanual"
+        data-bs-theme="dark"
+      >
+        <div className="container-fluid togglerIcon">
+          <a className="navbar-brand WebDeveloper animationleft" href="#">
+            Girish G R
+          </a>
+          {/* {
           toggle == true ? <>   <div>
         
         <button  className="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,54 +32,79 @@ return(
 
       } */}
 
-      
-                  <button onClick={handleToggle} className="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    {toggle==false ? <> <i class="bi bi-x-lg"></i> </> :
-                        <><span className="navbar-toggler-icon"> </span></>
-                            }
-                  </button>
-                  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <button
+            onClick={handleToggle}
+            className="navbar-toggler"
+            type="button"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            {toggle == true ? (
+              <>
+                {" "}
+                <span className="navbar-toggler-icon"> </span>
+              </>
+            ) : (
+              <>
+                <span className="navbar-toggler-icon"> </span>{" "}
+              </>
+            )}
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            {toggle == false ? (
+              <>
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
+                  <li className="nav-item">
+                    <a
+                      className="nav-link animationtop "
+                      aria-current="page"
+                      href="#navbar"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link animationtop " href="#about">
+                      About
+                    </a>
+                  </li>
 
-{
-  toggle==false ? <>
+                  <li className="nav-item">
+                    <a className="nav-link   animationtop " href="#education2">
+                      Education
+                    </a>
+                  </li>
 
-    
-    <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
-      <li className="nav-item">
+                  <li className="nav-item">
+                    <a className="nav-link   animationtop " href="#skill2">
+                      Skills
+                    </a>
+                  </li>
 
-             <a className="nav-link animationtop " aria-current="page" href="#navbar"  >Home</a>
-       
-      </li>
-      <li className="nav-item">
-        <a className="nav-link animationtop " href="#about" >About</a>
-      </li> 
+                  <li className="nav-item">
+                    <a className="nav-link  animationtop" href="/myworks">
+                      My Works
+                    </a>
+                  </li>
 
-      <li className="nav-item">
-        <a className="nav-link   animationtop " href="#education2" >Education</a>
-      </li>
-
-      <li className="nav-item">
-        <a className="nav-link   animationtop " href="#skill2" >Skills</a>
-      </li>
-
-      <li className="nav-item">
-        <a className="nav-link  animationtop" href="#ContactMe2" >Contact Me</a>
-      </li>
- </ul>
-  </> : <></>
-}
-</div>
-    </div>
-    
-  </nav>
-  
-  
-
-
-
-  </>
-)
-
+                  <li className="nav-item">
+                    <a className="nav-link  animationtop" href="#ContactMe2">
+                      Contact Me
+                    </a>
+                  </li>
+                </ul>
+              </>
+            ) : (
+              <></>
+            )}
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;

@@ -61,7 +61,7 @@ function AboutMe(){
       <div>
         <p>Address : <b>Bengaluru</b></p>
       <p> Phone : <b>+91-9513300588</b></p>
-      <p>Email:<b>grgirish33@gmail.com</b></p>
+      <p>Email : <b>grgirish33@gmail.com</b></p>
       <p>GitHub : <b>GirishGR</b></p>
       <p>Experience : <b>7yrs (Finance Domain)</b></p>
               </div>
