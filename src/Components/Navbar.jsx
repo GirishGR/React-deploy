@@ -85,7 +85,7 @@ function Navbar() {
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link  animationtop" href="/myworks">
+                    <a className="nav-link  animationtop" target="_blank" href="/myworks">
                       My Works
                     </a>
                   </li>

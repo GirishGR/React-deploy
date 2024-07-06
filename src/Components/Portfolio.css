@@ -35,7 +35,7 @@ box-sizing: border-box;
 }
 
 .MBA{
-  border-left: 2px solid #ff00ee;
+  border-left: 0.5px solid #ff00ee;
   margin-left: 0.7rem;
   height: 5.5rem;
 }
@@ -46,7 +46,7 @@ box-sizing: border-box;
 
 .EducationIcon{
   font-size: 1.5rem;
-  border-left: 2px solid #ff00ee;
+  border-left: 1px solid #ff00ee;
   border-radius: 5rem;
   background-color: black;
   color: 2px solid #ff00ee;
@@ -58,7 +58,7 @@ box-sizing: border-box;
 
 
 .Skills{ 
-  border: 2px solid #ff00ee;
+  border: 1px solid #ff00ee;
   height: 26.5rem;
   border-radius: 5%;
   /* width: 90%; */
@@ -98,8 +98,8 @@ box-sizing: border-box;
   .ContactMe input{
     height: 3rem;
     width: 21rem;
-  border-radius: 7px;
-  border: 2px solid #ff00ee;
+  border-radius: 20px;
+  border: 1px solid #ff00ee;
   background-color: rgb(40, 40, 40);
   opacity: 1;
   /* margin-left: 1rem; */
@@ -108,10 +108,10 @@ box-sizing: border-box;
   .ContactMe2 input{
     height: 3rem;
     width: 21rem;
-  border-radius: 7px;
+  border-radius: 15px;
   opacity: 1;
   background-color: rgb(40, 40, 40);
-  border: 2px solid #ff00ee;
+  border: 1px solid #ff00ee;
   /* margin-left: 1rem; */
   }
   
@@ -119,17 +119,17 @@ box-sizing: border-box;
   .ContactMe4 textarea{
     width: 21rem;
   background-color: rgb(40, 40, 40);
-  border: 2px solid #ff00ee;
-  border-radius: 7px;
+  border: 1px solid #ff00ee;
+  border-radius: 15px;
   /* margin-left: 1rem; */
   }
 
   .ContactMe3 input{
     height: 3rem;
     width: 9rem;
-  border-radius: 7px;
+  border-radius:25px;
   background-color: rgb(46, 46, 170);
-  border: 2px solid #ff00ee;
+  border: 1px solid #ff00ee;
   }
 
   .FormMsgs{
@@ -139,7 +139,8 @@ box-sizing: border-box;
   }
 
   .ContactMe3 input:hover{
-    background-color: rgb(72, 72, 220);
+    background-color: rgb(44, 44, 90);
+  
     }
 
     
@@ -280,13 +281,13 @@ filter: drop-shadow(0 0 7rem #ff00ee);
 
 
 .button{
+  border-radius:25px;
   width: 8rem;
   margin-right: 0.45rem;
-  
-  
 }
 
 .button2{
+  border-radius:25px;
   width: 8rem;
   margin-top: 0.8rem;
 }
