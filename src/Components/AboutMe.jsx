@@ -45,9 +45,9 @@ function AboutMe(){
         (Knowmore == true)  ? <>
         <div >
         <div className="container text-center ">
-          <h2><b className='animationtop'>Personal Infos</b></h2>
+          <h2><b className=''>Personal Infos</b></h2>
           <div className="row justify-content-md-center PersonalInfo">
-            <div className="col col-lg-3 col-md-4 text-start animationleft
+            <div className="col col-lg-3 col-md-4 text-start animationimage
             ">
               <p>Name : <b>Girish GR</b></p>
               <p>Age : <b>29 years</b></p>
@@ -56,7 +56,7 @@ function AboutMe(){
               <p>Qualification : <b>MBA</b></p>
             </div>
       
-            <div className="col col-lg-3 col-md-4 text-start PersonalInfo animationright">
+            <div className="col col-lg-3 col-md-4 text-start PersonalInfo animationimage ">
       
       <div>
         <p>Address : <b>Bengaluru</b></p>

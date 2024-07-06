@@ -61,7 +61,7 @@ function Navbar() {
                     <a
                       className="nav-link animationtop "
                       aria-current="page"
-                      href="#navbar"
+                      href="#header"
                     >
                       Home
                     </a>

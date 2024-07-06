@@ -47,7 +47,7 @@ function Education() {
 
 <div className="MBA text-start">
   <small className="TextAll">Nov-2022 to Present</small>
-  <h5 className="TextAll">Alstom Transport India Pvt Ltd</h5>
+  <h5 className="TextAll">Alstom Transport India Ltd</h5>
   <h6 className="TextAll">Process Associate-1</h6>
 </div>
 

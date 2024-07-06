@@ -23,7 +23,7 @@ return<>
 
   <div className="col col-lg-7 col-md-10 left-section HeaderContainers ">
     <div className="Left-section2 mb-5 ">
-  <p className='mt-4 animationleft'>
+  <p className='mt-5 animationleft'>
 
   <TypeAnimation sequence={['Hi, I am Girish G R', 2000]} wrapper="span" speed={5} style={{ color:'rgb(213, 213, 7)' }} repeat={2} />
 
