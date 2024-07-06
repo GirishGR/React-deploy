@@ -170,7 +170,7 @@ box-sizing: border-box;
       display: flex;
       justify-content: center;
       /* margin-left: 2.2rem; */
-    }cl
+    }
     
 
     .socialsIcons2{
@@ -287,7 +287,7 @@ filter: drop-shadow(0 0 7rem #ff00ee);
 }
 
 .button2{
-  border-radius:25px;
+ border-radius:25px;
   width: 8rem;
   margin-top: 0.8rem;
 }
