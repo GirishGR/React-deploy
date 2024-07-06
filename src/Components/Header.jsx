@@ -14,7 +14,7 @@ return<>
   <div className="row ">
 
   <div className="col col-lg-5 col-md-10 HeaderContainers right-section ">
-<div className="Header animationimage mt-4">
+<div className="Header animationimage mt-5">
   <dotlottie-player src="https://lottie.host/74476745-7ed6-4d1e-8d30-09e7346ea09b/Qd8fC619Ye.json"
       background="transparent" loop autoplay style={{height:"350px"}}></dotlottie-player>
   </div>
@@ -30,7 +30,7 @@ return<>
   </p>
             <p className=" animationright " id="">  <TypeAnimation sequence={['Financial Analyst', 2000,'Web Developer', 2000,]} wrapper="span" speed={10} style={{}} repeat={Infinity} /></p>
   
-            <p className="left-section3 animationbuttom">Hi, I'm Girish G R, a Finance Professional and an aspiring web developer with a passion for creating engaging and user-friendly web experiences. With a core knowledge in frontend development,I am looking for an opportunity in the profession of developing web applications that solve real-world problems.</p>
+            <p className="left-section3 animationbuttom">Hi, I'm Girish, a Finance Professional and an aspiring web developer with a passion for creating engaging and user-friendly web experiences. With a core knowledge in frontend development,I am looking for an opportunity in the profession of developing web applications that solve real-world problems.</p>
   
             <button className="btn btn-primary button" type="submit">  
             <a href="#ContactMe2" className="nav-link active " aria-current="page" id='about'>Hire Me</a>

@@ -83,8 +83,7 @@ box-sizing: border-box;
 
 .Footer{
   border-top: 0.1px solid rgb(50, 49, 49);
-  display: flex;
-  justify-content: space-between;
+ 
   align-items: center;
 }
 
@@ -108,7 +107,7 @@ box-sizing: border-box;
   .ContactMe2 input{
     height: 3rem;
     width: 21rem;
-  border-radius: 15px;
+  border-radius: 20px;
   opacity: 1;
   background-color: rgb(40, 40, 40);
   border: 1px solid #ff00ee;

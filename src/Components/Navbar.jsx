@@ -18,7 +18,7 @@ function Navbar() {
       >
         <div className="container-fluid togglerIcon">
           <a className="navbar-brand WebDeveloper animationleft" href="#">
-            Girish G R
+            Girish
           </a>
           {/* {
           toggle == true ? <>   <div>
