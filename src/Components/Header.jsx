@@ -6,18 +6,13 @@ const girishResume = 'http://localhost:3004/GirishResume.pdf'
 let Header = () =>{
     
   let downCv = (url) =>{
-
-    fetch(url).then((response=>response.blob())).then(blob=>{
-      const blobUrl = window.URL.createObjectURL(new Blob([blob]))
-      const fileName = url.split('/').pop();
+    const fileName = url.split('/').pop();
    const aTag = document.createElement('a');
-   aTag.href = blobUrl;
+   aTag.href = url;
    aTag.setAttribute('download', fileName);
    document.body.appendChild(aTag);
    aTag.click();
    aTag.remove();
-    })
-    
   }
 
 return<>
