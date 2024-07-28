@@ -4,15 +4,20 @@ import { TypeAnimation } from 'react-type-animation';
 
 const girishResume = 'http://localhost:3004/GirishResume.pdf'
 let Header = () =>{
-
+    
   let downCv = (url) =>{
-    const fileName = url.split('/').pop();
+
+    fetch(url).then((response=>response.blob())).then(blob=>{
+      const blobUrl = window.URL.createObjectURL(new Blob([blob]))
+      const fileName = url.split('/').pop();
    const aTag = document.createElement('a');
-   aTag.href = url;
+   aTag.href = blobUrl;
    aTag.setAttribute('download', fileName);
    document.body.appendChild(aTag);
    aTag.click();
    aTag.remove();
+    })
+    
   }
 
 return<>
