@@ -5,11 +5,11 @@ import { TypeAnimation } from 'react-type-animation';
 const girishResume = 'http://localhost:3004/GirishResume.pdf'
 let Header = () =>{
     
-  let downCv = (url) =>{
-    const fileName = url.split('/').pop();
+  let downCv = () =>{
+    const fileName = "GirishResume.pdf";
    const aTag = document.createElement('a');
-   aTag.href = url;
-   aTag.setAttribute('download', fileName);
+   aTag.href = fileName;
+   aTag.download = 'GirishResume.pdf';
    document.body.appendChild(aTag);
    aTag.click();
    aTag.remove();
@@ -42,7 +42,7 @@ return<>
             <button className="btn btn-primary button" type="submit">  
             <a href="#ContactMe2" className="nav-link active " aria-current="page" id='about'>Hire Me</a>
              </button>
-            <button  className="btn btn-success button" type="submit" id="DownloadCV" onClick={()=>{downCv(girishResume)}}>Download CV</button>
+            <button  className="btn btn-success button" type="submit" id="DownloadCV" onClick={()=>{downCv()}}>Download CV</button>
             </div>
   </div>
 
