@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Portfolio.css';
 import Axios from 'axios';
-import Image from './Imgs/thank-you-form.png'
+import Image from './Imgs/Sorryy.jpg'
 import Modal from 'react-modal'
 
 
@@ -13,7 +13,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    marginTop:'6vh',
+    marginTop:'6vh'
   },
 };
 
@@ -46,7 +46,9 @@ function ContactMe() {
     .catch((err)=>{
       console.log(err)
     })
-  
+  if(contactDetails){
+    setIsOpen(!isOpen)
+  }
    }
 
   return <>
@@ -102,14 +104,16 @@ function ContactMe() {
       >
        
         <div>
-          <img src={Image} alt="" />
+          <img src={Image} style={{height:'300px'}} alt="" />
+          <div className='text-center '>
+       <h1 className='mb-3' style={{height:'40px', backgroundColor:'white',color:'grey',fontWeight:"900", fontSize:'35px'}}>BackEnd not deployed!</h1>
+      </div>
         </div>
       
+
         <button onClick={handleModal} className='btn btn-secondary form-control text-white' style={{fontWeight:'700', fontSize:"20px"}}>Ok</button>
       </Modal>
     </div>
-
-
 
 
     <div className="row">
