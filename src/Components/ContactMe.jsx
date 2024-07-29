@@ -1,20 +1,10 @@
 import { useState } from 'react';
 import './Portfolio.css';
-import axios from 'axios';
+import Axios from 'axios';
 // import Submission from './Submission';
 
 
 function ContactMe() {
-
-let [formNameMsg,setFormNameMsg] = useState(" ")
-let [formEmailMsg,setformEmailMsg] = useState(" ")
-let [formMobileMsg,setformMobileMsg] = useState(" ")
-let [formSubjectMsg,setformSubjectMsg] = useState(" ")
-let [formMessageMsg,setformMessageMsg] = useState(" ")
-
-
-
-
 
   let [contactDetails, setContactDetails] = useState({
     name: "",
@@ -29,45 +19,18 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
   }
 
 
+  const handleSubmit = (event)=>{
+    event.preventDefault();
+    const url ='http://127.0.0.1:5000/api/contactDetails';
+    Axios.post(url,contactDetails)
+    .then((response)=>{console.log(response.data)
 
-  const handleSubmit = async (event) => {
-    // event.preventDefault();
-
-    // console.log(JSON.stringify(contactDetails))
-    await axios.post('http://localhost:3005/users', contactDetails)
-      .then((response)  => { console.log(response.JSON()) })
-      .catch((err) => {
-        console.log(err)
-      })
-
-      if((contactDetails.message && contactDetails.name && contactDetails.email && contactDetails.subject && contactDetails.mobile).length == 0){
-
-  }
-}
-
-
-
-  // let handleSubmit = async (event)=>{
-
-  //   let url = 'http://localhost:3002/users';
-  //       let options ={
-  //         method: 'POST',
-  //         headers:{
-  //           'Content-type':'application/json'
-  //         },
-  //         body:JSON.stringify(contactDetails)
-  //       };
-
-  //       let response = await fetch(url,options);
-  //       let data = await response.json();
-
-  //       if(data){
-  //         alert("Thanks for the data!");
-  //       }
-
-   
-  //     }
-
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+   }
+  
 
 
 
@@ -86,21 +49,21 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
               
-              <input className=''  required name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onClick={()=>{setFormNameMsg((contactDetails.name.length>0 ? "" : ""))}} />
-              <p className='FormMsgs'>{formNameMsg}</p>
+              <input className=''  required name="name" type="text" id='name' placeholder="  Full Name" onChange={updateContact}  />
+              <p className='FormMsgs'></p>
 
-              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onClick={()=>{setformEmailMsg(contactDetails.email.length<=0 ? "" : "") }} required/>
-              <p className='FormMsgs'>{formEmailMsg}</p>
+              <input className='' name="email" type="text" id='email' placeholder="  Email" onChange={updateContact} required/>
+              <p className='FormMsgs'></p>
 
             </div>
           </div>
 
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
-              <input className='' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} onClick={()=>{setformMobileMsg(contactDetails.mobile.length<10 ? "" : "")}} required />
-              <p className='FormMsgs'>{formMobileMsg}</p> 
-              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} onClick={()=>{setformSubjectMsg(contactDetails.subject.length<=0 ? "" : "")}} required/>
-              <p className='FormMsgs'>{formSubjectMsg}</p>
+              <input className='' name="mobile" id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact}required />
+              <p className='FormMsgs'></p> 
+              <input name="subject" id='subject' type="text" placeholder="  Subject For" onChange={updateContact} required/>
+              <p className='FormMsgs'></p>
             </div>
             
 
@@ -108,13 +71,13 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
 
           <div className="col-12 col-md-10 ContactMe4">
 
-            <textarea className=' animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact} onClick={()=>{setformMessageMsg(contactDetails.message.length>=0 ? "" : "")}} required ></textarea>
+            <textarea className=' animationbuttom' id='message' name="message" placeholder="  Message" cols="40" rows="8" onChange={updateContact} required ></textarea>
           </div>
-            <p className='FormMsgs text-center' >{formMessageMsg}</p>
+            <p className='FormMsgs text-center' ></p>
           <div className="col-12 col-md-10 ContactMe3 mt-2">
             <input type="submit"  value="Send Messsage" onClick={handleSubmit}/>
           </div>
-
+    
         </div>
       </form>
 

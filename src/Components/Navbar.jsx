@@ -17,7 +17,7 @@ function Navbar() {
         data-bs-theme="dark"
       >
         <div className="container-fluid togglerIcon">
-          <a className="navbar-brand WebDeveloper animationleft" href="#">
+          <a className="navbar-brand WebDeveloper animationleft" href="/header">
             Girish
           </a>
           {/* {
@@ -42,9 +42,9 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            {toggle == true ? (
+            {toggle === true ? (
               <>
-                {" "}
+              
                 <span className="navbar-toggler-icon"> </span>
               </>
             ) : (
@@ -54,7 +54,7 @@ function Navbar() {
             )}
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {toggle == false ? (
+            {toggle === false ? (
               <>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
                   <li className="nav-item">

@@ -39,7 +39,7 @@ let Mywork = ()=>{
  
        <div className="netflix-clone">
          
-       <a href="https://netflix-clone-practive.vercel.app/"><iframe className="girishportfolio" src="https://netflix-clone-practive.vercel.app/" frameborder=""></iframe></a>
+       <a href="https://netflix-clone-practive.vercel.app/"><iframe className="girishportfolio" title="netflix" src="https://netflix-clone-practive.vercel.app/" frameborder=""></iframe></a>
       
        </div>
  
@@ -54,7 +54,7 @@ let Mywork = ()=>{
  
        <div className="netflix-clone">
          
-       <a href="https://amazon-clone-eta-rosy.vercel.app/"><iframe className="girishportfolio" src="https://amazon-clone-eta-rosy.vercel.app/" frameborder=""></iframe></a>
+       <a href="https://amazon-clone-eta-rosy.vercel.app/"><iframe className="girishportfolio" title="amazon" src="https://amazon-clone-eta-rosy.vercel.app/" frameborder=""></iframe></a>
       
        </div>
    </div>
@@ -66,7 +66,7 @@ let Mywork = ()=>{
  
        <div className="netflix-clone">
          
-       <a href="https://practive1-restaurant.vercel.app/"><iframe className="girishportfolio" src="https://practive1-restaurant.vercel.app/" frameborder=""></iframe></a>
+       <a href="https://practive1-restaurant.vercel.app/"><iframe className="girishportfolio" title="restaurant" src="https://practive1-restaurant.vercel.app/" frameborder=""></iframe></a>
       
        </div>
  

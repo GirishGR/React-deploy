@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 
-const girishResume = 'http://localhost:3004/GirishResume.pdf'
+// const girishResume = 'http://localhost:3004/GirishResume.pdf'
 let Header = () =>{
     
   let downCv = () =>{

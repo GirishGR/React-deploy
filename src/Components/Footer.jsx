@@ -9,7 +9,7 @@ let Footer = () => {
             <a
               className="nav-link active text-center mb-2"
               aria-current="page"
-              href="#"
+              href="/"
             >
               Home/Top
             </a>
