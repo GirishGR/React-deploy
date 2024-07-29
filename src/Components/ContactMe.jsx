@@ -13,7 +13,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    marginTop:'6vh'
+    marginTop:'6vh',
   },
 };
 
@@ -104,9 +104,9 @@ function ContactMe() {
       >
        
         <div >
-          <img src={Image} alt="" />
+          <img src={Image} style={{height:'241px', }} alt="" />
           <div className='text-center '>
-       <h1 className='mb-3' style={{height:'40px', backgroundColor:'white',color:'grey',fontWeight:"900", fontSize:'30px'}}>BackEnd not deployed!</h1>
+       <h1 className='mb-3' style={{height:'40px', backgroundColor:'white',color:'grey',fontWeight:"900", fontSize:'25px'}}>BackEnd not deployed!</h1>
       </div>
         </div>
       
