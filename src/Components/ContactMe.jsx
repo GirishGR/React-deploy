@@ -1,8 +1,21 @@
 import { useState } from 'react';
 import './Portfolio.css';
 import Axios from 'axios';
-// import Submission from './Submission';
+import Image from './Imgs/thank-you-form.png'
+import Modal from 'react-modal'
 
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    marginTop:'6vh',
+  },
+};
 
 function ContactMe() {
 
@@ -18,22 +31,23 @@ function ContactMe() {
     setContactDetails({ ...contactDetails, [event.target.name]: event.target.value })
   }
 
+  const [isOpen,setIsOpen] = useState(false)
+
+  let handleModal = ()=>{
+    setIsOpen(!isOpen)
+  }
 
   const handleSubmit = (event)=>{
     event.preventDefault();
     const url ='http://127.0.0.1:5000/api/contactDetails';
     Axios.post(url,contactDetails)
-    .then((response)=>{console.log(response.data)
-
+    .then((response)=>{if(response.data){setIsOpen(!isOpen)}
     })
     .catch((err)=>{
       console.log(err)
     })
-   }
   
-
-
-
+   }
 
   return <>
 
@@ -49,7 +63,7 @@ function ContactMe() {
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
               
-              <input className=''  required name="name" type="text" id='name' placeholder="  Full Name" onChange={updateContact}  />
+              <input name="name" type="text" id='name' placeholder="  Full Name" onChange={updateContact}  required/>
               <p className='FormMsgs'></p>
 
               <input className='' name="email" type="text" id='email' placeholder="  Email" onChange={updateContact} required/>
@@ -60,12 +74,11 @@ function ContactMe() {
 
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
-              <input className='' name="mobile" id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact}required />
+              <input name="mobile" id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} required />
               <p className='FormMsgs'></p> 
               <input name="subject" id='subject' type="text" placeholder="  Subject For" onChange={updateContact} required/>
               <p className='FormMsgs'></p>
             </div>
-            
 
           </div>
 
@@ -77,13 +90,27 @@ function ContactMe() {
           <div className="col-12 col-md-10 ContactMe3 mt-2">
             <input type="submit"  value="Send Messsage" onClick={handleSubmit}/>
           </div>
-    
+    {/* <pre>{JSON.stringify(contactDetails)}</pre> */}
         </div>
       </form>
 
-
-
+      {/* Modal on Submission */}
+<Modal
+        isOpen={isOpen}
+        contentLabel="Example Modal"
+        style={customStyles}
+      >
+       
+        <div>
+          <img src={Image} alt="" />
+        </div>
+      
+        <button onClick={handleModal} className='btn btn-secondary form-control text-white' style={{fontWeight:'700', fontSize:"20px"}}>Ok</button>
+      </Modal>
     </div>
+
+
+
 
     <div className="row">
       <div className="col mt-3">
@@ -98,9 +125,6 @@ function ContactMe() {
 
       </div>
     </div>
-
-
-
 
   </>
 }
