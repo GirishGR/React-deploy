@@ -96,11 +96,11 @@ function Navbar() {
                     </a>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link  animationtop" href="/thankyou">
                       Thanks
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </>
             ) : (

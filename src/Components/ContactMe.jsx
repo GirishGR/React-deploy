@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Portfolio.css';
 import axios from 'axios';
-import Submission from './Submission';
+// import Submission from './Submission';
 
 
 function ContactMe() {
@@ -12,7 +12,7 @@ let [formMobileMsg,setformMobileMsg] = useState(" ")
 let [formSubjectMsg,setformSubjectMsg] = useState(" ")
 let [formMessageMsg,setformMessageMsg] = useState(" ")
 
-let [popUp, setPopUp] = useState(false);
+
 
 
 
@@ -41,9 +41,8 @@ let [popUp, setPopUp] = useState(false);
       })
 
       if((contactDetails.message && contactDetails.name && contactDetails.email && contactDetails.subject && contactDetails.mobile).length == 0){
-  setPopUp()
-  }else
-  { setPopUp(true) }
+
+  }
 }
 
 
@@ -119,10 +118,6 @@ let [popUp, setPopUp] = useState(false);
         </div>
       </form>
 
-
-{
-  popUp ? <><Submission/></> : <></>
-}
 
 
     </div>
