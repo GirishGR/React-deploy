@@ -1,6 +1,6 @@
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 // import { Route, Routes } from 'react-router-dom';
-import Home from './Home';
+// import Home from './Home';
 
 
 let Mywork = ()=>{

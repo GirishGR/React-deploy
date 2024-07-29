@@ -95,6 +95,12 @@ function Navbar() {
                       Contact Me
                     </a>
                   </li>
+
+                  <li className="nav-item">
+                    <a className="nav-link  animationtop" href="/thankyou">
+                      Thanks
+                    </a>
+                  </li>
                 </ul>
               </>
             ) : (

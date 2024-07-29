@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Portfolio.css';
 import axios from 'axios';
+import Submission from './Submission';
 
 
 function ContactMe() {
@@ -10,6 +11,8 @@ let [formEmailMsg,setformEmailMsg] = useState(" ")
 let [formMobileMsg,setformMobileMsg] = useState(" ")
 let [formSubjectMsg,setformSubjectMsg] = useState(" ")
 let [formMessageMsg,setformMessageMsg] = useState(" ")
+
+let [popUp, setPopUp] = useState(false);
 
 
 
@@ -28,7 +31,7 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
 
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    // event.preventDefault();
 
     // console.log(JSON.stringify(contactDetails))
     await axios.post('http://localhost:3005/users', contactDetails)
@@ -38,9 +41,9 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
       })
 
       if((contactDetails.message && contactDetails.name && contactDetails.email && contactDetails.subject && contactDetails.mobile).length == 0){
-   alert("Please fill in all the details and Submit!")
+  setPopUp()
   }else
-  { alert("Thanks for the contact details!") }
+  { setPopUp(true) }
 }
 
 
@@ -78,16 +81,16 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
       <h1 className="mt-5 mb-4 animationtop">Contact Me</h1>
 
 
-      <form  action="">
+      <form  >
 
         <div className="row formContainer">
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe animationleft">
               
-              <input className='' name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onClick={()=>{setFormNameMsg((contactDetails.name.length>0 ? "" : ""))}}/>
+              <input className=''  required name={"name"} type="text" id='name' placeholder="  Full Name" onChange={updateContact} onClick={()=>{setFormNameMsg((contactDetails.name.length>0 ? "" : ""))}} />
               <p className='FormMsgs'>{formNameMsg}</p>
 
-              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onClick={()=>{setformEmailMsg(contactDetails.email.length<=0 ? "" : "") }}/>
+              <input className='' name={"email"} type="text" id='email' placeholder="  Email" onChange={updateContact} onClick={()=>{setformEmailMsg(contactDetails.email.length<=0 ? "" : "") }} required/>
               <p className='FormMsgs'>{formEmailMsg}</p>
 
             </div>
@@ -95,33 +98,34 @@ let [formMessageMsg,setformMessageMsg] = useState(" ")
 
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
-              <input className='' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} onClick={()=>{setformMobileMsg(contactDetails.mobile.length<10 ? "" : "")}} />
+              <input className='' name={"mobile"} id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} onClick={()=>{setformMobileMsg(contactDetails.mobile.length<10 ? "" : "")}} required />
               <p className='FormMsgs'>{formMobileMsg}</p> 
-              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} onClick={()=>{setformSubjectMsg(contactDetails.subject.length<=0 ? "" : "")}}/>
+              <input name={"subject"} id='subject' type="text" placeholder="  Subject For" onChange={updateContact} onClick={()=>{setformSubjectMsg(contactDetails.subject.length<=0 ? "" : "")}} required/>
               <p className='FormMsgs'>{formSubjectMsg}</p>
             </div>
+            
 
           </div>
 
           <div className="col-12 col-md-10 ContactMe4">
 
-            <textarea className=' animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact} onClick={()=>{setformMessageMsg(contactDetails.message.length>=0 ? "" : "")}} ></textarea>
+            <textarea className=' animationbuttom' id='message' name={"message"} placeholder="  Message" cols="40" rows="8" onChange={updateContact} onClick={()=>{setformMessageMsg(contactDetails.message.length>=0 ? "" : "")}} required ></textarea>
           </div>
             <p className='FormMsgs text-center' >{formMessageMsg}</p>
           <div className="col-12 col-md-10 ContactMe3 mt-2">
-            <input type="submit" onClick={handleSubmit} value="Send Messsage" />
+            <input type="submit"  value="Send Messsage" onClick={handleSubmit}/>
           </div>
 
         </div>
       </form>
 
 
-
+{
+  popUp ? <><Submission/></> : <></>
+}
 
 
     </div>
-
-
 
     <div className="row">
       <div className="col mt-3">

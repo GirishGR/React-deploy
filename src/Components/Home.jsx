@@ -21,9 +21,6 @@ const Home = () => {
       <AboutMe/>
       <Education/>
       <Skills/>
-
-
-
       <ContactMe/>
       <Footer/> 
 
