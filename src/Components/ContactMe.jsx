@@ -103,10 +103,10 @@ function ContactMe() {
         style={customStyles}
       >
        
-        <div>
-          <img src={Image} style={{height:'300px'}} alt="" />
+        <div style={{width:"70vh",backgroundColor:'white'}}>
+          <img src={Image} style={{height:'230px', }} alt="" />
           <div className='text-center '>
-       <h1 className='mb-3' style={{height:'40px', backgroundColor:'white',color:'grey',fontWeight:"900", fontSize:'35px'}}>BackEnd not deployed!</h1>
+       <h1 className='mb-3' style={{height:'40px', backgroundColor:'white',color:'grey',fontWeight:"900", fontSize:'30px'}}>BackEnd not deployed!</h1>
       </div>
         </div>
       
