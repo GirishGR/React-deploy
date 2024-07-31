@@ -137,7 +137,7 @@ if(Object.keys(validateErrors).length === 0){
       >
        
         <div >
-          <img src={Image} style={{height:'175px', }} alt="" /> 
+          <img src={Image} style={{height:'220px', }} alt="" /> 
        <h1 className='mb-3 text-center' style={{height:'30px', backgroundColor:'white',color:'grey',fontWeight:"800", fontSize:'20px',}}>BackEnd not deployed!</h1>
         </div>
       
