@@ -37,18 +37,49 @@ function ContactMe() {
     setIsOpen(!isOpen)
   }
 
+  let [errors, setErrors] = useState({}); 
+
   const handleSubmit = (event)=>{
     event.preventDefault();
     const url ='http://127.0.0.1:5000/api/contactDetails';
     Axios.post(url,contactDetails)
-    .then((response)=>{if(response.data){setIsOpen(!isOpen)}
+    .then((response)=>{if(response.data){handleModal()}
     })
     .catch((err)=>{
       console.log(err)
     })
-  if(contactDetails){
-    setIsOpen(!isOpen)
-  }
+ 
+const validateErrors = {};
+
+if(!contactDetails.name.trim()){
+  validateErrors.name = "Name is required";
+}
+
+if(!contactDetails.mobile.trim()){
+  validateErrors.mobile = "Mobile number is required";
+}
+
+if(!contactDetails.email.trim()){
+  validateErrors.email = "Email is required"
+}else if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contactDetails.email)){
+    validateErrors.email = "Invalid email format"
+}
+
+
+if(!contactDetails.subject.trim()){
+  validateErrors.subject = "Subject is required"
+}
+
+if(!contactDetails.message.trim()){
+  validateErrors.message = "Message is required"
+}
+
+setErrors(validateErrors);
+
+
+if(Object.keys(validateErrors).length === 0){
+  handleModal();
+}
    }
 
   return <>
@@ -66,10 +97,10 @@ function ContactMe() {
             <div className="ContactMe animationleft">
               
               <input name="name" type="text" id='name' placeholder="  Full Name" onChange={updateContact}  required/>
-              <p className='FormMsgs'></p>
+                <p className='FormMsgs'>{errors.name}</p>
 
               <input className='' name="email" type="text" id='email' placeholder="  Email" onChange={updateContact} required/>
-              <p className='FormMsgs'></p>
+              <p className='FormMsgs'>{errors.email}</p>
 
             </div>
           </div>
@@ -77,9 +108,9 @@ function ContactMe() {
           <div className="col-lg-4 col-md-10 col-12">
             <div className="ContactMe2 animationright">
               <input name="mobile" id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} required />
-              <p className='FormMsgs'></p> 
+              <p className='FormMsgs'>{errors.mobile}</p>
               <input name="subject" id='subject' type="text" placeholder="  Subject For" onChange={updateContact} required/>
-              <p className='FormMsgs'></p>
+              <p className='FormMsgs'>{errors.subject}</p>
             </div>
 
           </div>
@@ -87,8 +118,10 @@ function ContactMe() {
           <div className="col-12 col-md-10 ContactMe4">
 
             <textarea className=' animationbuttom' id='message' name="message" placeholder="  Message" cols="40" rows="8" onChange={updateContact} required ></textarea>
+             
           </div>
-            <p className='FormMsgs text-center' ></p>
+
+          <p className='FormMsgs text-center'>{errors.message}</p>
           <div className="col-12 col-md-10 ContactMe3 mt-2">
             <input type="submit"  value="Send Messsage" onClick={handleSubmit}/>
           </div>
@@ -104,15 +137,17 @@ function ContactMe() {
       >
        
         <div >
-          <img src={Image} style={{height:'241px', }} alt="" />
-          <div className='text-center '>
-       <h1 className='mb-3' style={{height:'40px', backgroundColor:'white',color:'grey',fontWeight:"900", fontSize:'25px'}}>BackEnd not deployed!</h1>
-      </div>
+          <img src={Image} style={{height:'175px', }} alt="" /> 
+       <h1 className='mb-3 text-center' style={{height:'30px', backgroundColor:'white',color:'grey',fontWeight:"800", fontSize:'20px',}}>BackEnd not deployed!</h1>
         </div>
       
 
         <button onClick={handleModal} className='btn btn-secondary form-control text-white' style={{fontWeight:'700', fontSize:"20px"}}>Ok</button>
       </Modal>
+
+
+
+
     </div>
 
 
@@ -134,3 +169,18 @@ function ContactMe() {
 }
 
 export default ContactMe;
+
+
+
+
+// Incase of password and Confirm password.
+
+// if(!contactDetails.password.trim()){
+//   validateErrors.password = "Password is required"
+// }else if (contactDetails.password.length< 6){
+//   validateErrors.password = "Password should be at least 6 characters"
+// }
+
+// if(contactDetails.Confirmpassword !== contactDetails.password){
+//   validateErrors.Confirmpassword = "Password and Confirm password should be same"
+// }
