@@ -69,10 +69,10 @@ function AboutMe(){
           </div>
 
       </div>
-      <button type="button" className="btn btn-info mt-3 mb-5 button" id="KnowMore" onClick={()=>{setKnowMore(false)}} > Close</button>
+      <button type="button" className="mt-3 mb-5 button" id="KnowMore" onClick={()=>{setKnowMore(false)}} > Close</button>
 
     </div> </> : <>
-    <button type="button" className="btn btn-info mt-1 mb-5 button" id="education2" onClick={()=>{setKnowMore(true)}} >Personal Info</button>
+    <button type="button" className=" mt-1 mb-5 button" id="education2" onClick={()=>{setKnowMore(true)}} >Personal Info</button>
     </>
 }
   </div>

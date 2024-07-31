@@ -32,17 +32,17 @@ return<>
     <div className="Left-section2 mb-5 ">
   <p className='mt-5 animationleft'>
 
-  <TypeAnimation sequence={['Hi, I am Girish G R', 2000]} wrapper="span" speed={5} style={{ color:'rgb(213, 213, 7)' }} repeat={2} />
+  <TypeAnimation sequence={['Hi, I am Girish G R', 2000]} wrapper="span" speed={1} style={{ color:'#ff00ee', fontWeight:"700" }} repeat={3} />
 
   </p>
             <p className=" animationright " id="">  <TypeAnimation sequence={['Financial Analyst', 2000,'Web Developer', 2000,]} wrapper="span" speed={10} style={{}} repeat={Infinity} /></p>
   
             <p className="left-section3 animationbuttom">Hi, I'm Girish, a Finance Professional and an aspiring web developer with a passion for creating engaging and user-friendly web experiences. With a core knowledge in frontend development,I am looking for an opportunity in the profession of developing web applications that solve real-world problems.</p>
   
-            <button className="btn btn-primary button" type="submit">  
+            <button className="button me-2" type="submit">  
             <a href="#ContactMe2" className="nav-link active about" aria-current="page" id='about'>Hire Me</a>
              </button>
-            <button  className="btn btn-success button" type="submit" id="DownloadCV" onClick={()=>{downCv()}}>Download CV</button>
+            <button  className="button " type="submit" id="DownloadCV" onClick={()=>{downCv()}}>Download CV</button>
             </div>
   </div>
 

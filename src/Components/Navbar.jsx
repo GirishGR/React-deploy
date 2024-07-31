@@ -2,11 +2,11 @@ import "./Portfolio.css";
 import React, { useState } from "react";
 
 function Navbar() {
-  let [toggle, setToggle] = useState(false);
+  let [toggle, setToggle] = useState(true);
 
-  let handleToggle = () => {
-    setToggle(!toggle);
-  };
+  // let handleToggle = () => {
+  //   setToggle(!toggle);
+  // };
 
   return (
     <>
@@ -16,7 +16,7 @@ function Navbar() {
         id="navbarmanual"
         data-bs-theme="dark"
       >
-        <div className="container-fluid togglerIcon">
+        <div className="container togglerIcon">
           <a className="navbar-brand WebDeveloper animationleft" href="/header">
             Girish
           </a>
@@ -33,40 +33,42 @@ function Navbar() {
       } */}
 
           <button
-            onClick={handleToggle}
+          
+            onClick={()=>{setToggle(!toggle)}}
             className="navbar-toggler"
             type="button"
             data-bs-target="#navbarSupportedContent"
             data-bs-toggle="collapse"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-label="Toggle navigation"
+
           >
             {toggle === true ? (
               <>
               
-                <span className="navbar-toggler-icon"> </span>
+                <span className="navbar-toggler-icon" onClick={()=>{setToggle(false)}}> </span>
               </>
             ) : (
               <>
-                <span className="navbar-toggler-icon"> </span>{" "}
+                <span className="navbar-toggler-icon" > </span>{" "}
               </>
             )}
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {toggle === false ? (
+            {toggle === true ? (
               <>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
                   <li className="nav-item">
                     <a
                       className="nav-link animationtop "
-                      aria-current="page"
+                      // aria-current="page"
                       href="#header"
                     >
                       Home
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" >
                     <a className="nav-link animationtop " href="#about">
                       About
                     </a>

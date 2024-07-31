@@ -123,7 +123,7 @@ if(Object.keys(validateErrors).length === 0){
 
           <p className='FormMsgs text-center'>{errors.message}</p>
           <div className="col-12 col-md-10 ContactMe3 mt-2">
-            <input type="submit"  value="Send Messsage" onClick={handleSubmit}/>
+           <button className='button' onClick={handleSubmit}>Send Message</button>
           </div>
     {/* <pre>{JSON.stringify(contactDetails)}</pre> */}
         </div>
@@ -137,7 +137,7 @@ if(Object.keys(validateErrors).length === 0){
       >
        
         <div >
-          <img src={Image} style={{height:'180px', }} alt="" /> 
+          <img src={Image} style={{height:'190px', }} alt="" /> 
        <h1 className='mb-3 text-center' style={{height:'30px', backgroundColor:'white',color:'grey',fontWeight:"800", fontSize:'20px',}}>BackEnd not deployed!</h1>
         </div>
       
