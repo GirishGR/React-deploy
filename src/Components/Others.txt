@@ -1,6 +1,21 @@
 import { useState } from 'react';
 import './Portfolio.css';
 import Axios from 'axios';
+import Image from './Imgs/Sorryy.jpg'
+import Modal from 'react-modal'
+
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    marginTop:'6vh',
+  },
+};
 
 function ContactMe() {
 
@@ -16,6 +31,11 @@ function ContactMe() {
     setContactDetails({ ...contactDetails, [event.target.name]: event.target.value })
   }
 
+  const [isOpen,setIsOpen] = useState(false)
+
+  let handleModal = ()=>{
+    setIsOpen(!isOpen)
+  }
 
   let [errors, setErrors] = useState({}); 
 
@@ -23,7 +43,7 @@ function ContactMe() {
     event.preventDefault();
     const url ='http://127.0.0.1:5000/api/contactDetails';
     Axios.post(url,contactDetails)
-    .then((response)=>{if(response.data){alert("Thanks for sharing data")}
+    .then((response)=>{if(response.data){handleModal()}
     })
     .catch((err)=>{
       console.log(err)
@@ -58,51 +78,77 @@ setErrors(validateErrors);
 
 
 if(Object.keys(validateErrors).length === 0){
-//  alert("Thanks for sharing details")
+  handleModal();
 }
    }
 
   return <>
 
-<div className="container animationtop">
-       
-<h1 className="mt-5 mb-4 ">Contact Me</h1>
-             
-          <form >
+    <div className="container">
 
-            <div className='row justify-content-center'>
-              <div className="col-lg-5 col-11 ContactMe ">
-                  <input type="text" className='form-control' name="name" placeholder='Please enter your name' onChange={updateContact} required/>
-                  <p className='FormMsgs'>{errors.name}</p>
-                    <input type="text" name="mobile" placeholder='Please enter mobile number' className='form-control' onChange={updateContact} required/>
-                    <p className='FormMsgs'>{errors.mobile}</p>
-              </div>
 
-              <div className="col-lg-5 col-11 ContactMe">
-                  <input type="text" name="email" className='form-control'  placeholder='Please enter email' onChange={updateContact} required/>
-                  <p className='FormMsgs'>{errors.email}</p>
-                    <input type="text" placeholder='Please enter subject' name="subject" className='form-control' onChange={updateContact} required/>
-                    <p className='FormMsgs'>{errors.subject}</p>
-              </div>
+      <h1 className="mt-5 mb-4 animationtop">Contact Me</h1>
 
-                <div className="col-lg-7 col-11 ContactMe">
-                  <textarea name="message" rows={8} className='form-control' placeholder='Please type in your message' onChange={updateContact} required></textarea>
-                  <p className='FormMsgs text-center'>{errors.message}</p>
-                 
-                </div>    
-                <div className='submitButton'>
-                {/* <input type="submit" value="Send Message" className='button3 align-content-center' onClick={handleSubmit}/> */}
-                <button className='button' onClick={handleSubmit}>Send Message</button>
-                </div>           
-              </div>
-              {/* <pre className='text-center'>{JSON.stringify(contactDetails)}</pre> */}
 
-          </form>
+      <form  >
+
+        <div className="row formContainer">
+          <div className="col-lg-4 col-md-10 col-12">
+            <div className="ContactMe animationleft">
+              
+              <input name="name" type="text" id='name' placeholder="  Full Name" onChange={updateContact}  required/>
+                <p className='FormMsgs'>{errors.name}</p>
+
+              <input className='' name="email" type="text" id='email' placeholder="  Email" onChange={updateContact} required/>
+              <p className='FormMsgs'>{errors.email}</p>
+
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-10 col-12">
+            <div className="ContactMe2 animationright">
+              <input name="mobile" id='mobile' type="text" placeholder="  Mobile Number" onChange={updateContact} required />
+              <p className='FormMsgs'>{errors.mobile}</p>
+              <input name="subject" id='subject' type="text" placeholder="  Subject For" onChange={updateContact} required/>
+              <p className='FormMsgs'>{errors.subject}</p>
+            </div>
 
           </div>
 
+          <div className="col-12 col-md-10 ContactMe4">
+
+            <textarea className=' animationbuttom' id='message' name="message" placeholder="  Message" cols="40" rows="8" onChange={updateContact} required ></textarea>
+             
+          </div>
+
+          <p className='FormMsgs text-center'>{errors.message}</p>
+          <div className="col-12 col-md-10 ContactMe3 mt-2">
+           <button className='button' onClick={handleSubmit}>Send Message</button>
+          </div>
+    {/* <pre>{JSON.stringify(contactDetails)}</pre> */}
+        </div>
+      </form>
+
+      {/* Modal on Submission */}
+<Modal
+        isOpen={isOpen}
+        contentLabel="Example Modal"
+        style={customStyles}
+      >
+       
+        <div >
+          <img src={Image} style={{height:'190px', }} alt="" /> 
+       <h1 className='mb-3 text-center' style={{height:'30px', backgroundColor:'white',color:'grey',fontWeight:"800", fontSize:'20px',}}>BackEnd not deployed!</h1>
+        </div>
+      
+
+        <button onClick={handleModal} className='btn btn-secondary form-control text-white' style={{fontWeight:'700', fontSize:"20px"}}>Ok</button>
+      </Modal>
 
 
+
+
+    </div>
 
 
     <div className="row">
