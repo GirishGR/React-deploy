@@ -65,7 +65,7 @@ function ContactEmail() {
               />
               <p className="FormMsgs"></p>
               <input
-                type="text"
+                type="tel"
                 name="mobile"
                 placeholder="Please enter mobile number"
                 className="form-control"
@@ -76,10 +76,11 @@ function ContactEmail() {
 
             <div className="col-lg-5 col-11 ContactMe">
               <input
-                type="text"
+                type="email"
                 name="email"
                 className="form-control"
                 placeholder="Please enter email"
+               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                 required
               />
               <p className="FormMsgs"></p>
