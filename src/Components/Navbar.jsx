@@ -1,12 +1,13 @@
+import { Link } from "react-scroll";
 import "./Portfolio.css";
 import React, { useState } from "react";
 
 function Navbar() {
   let [toggle, setToggle] = useState(true);
 
-  // let handleToggle = () => {
-  //   setToggle(!toggle);
-  // };
+  let handleToggle = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <>
@@ -17,6 +18,7 @@ function Navbar() {
         data-bs-theme="dark"
       >
         <div className="container togglerIcon">
+          
           <a className="navbar-brand WebDeveloper animationleft" href="/header">
             Girish
           </a>
@@ -32,77 +34,51 @@ function Navbar() {
 
       } */}
 
-          <button
-          
-            onClick={()=>{setToggle(!toggle)}}
+
+          <button         
+            onClick={handleToggle}
             className="navbar-toggler"
             type="button"
             data-bs-target="#navbarSupportedContent"
-            data-bs-toggle="collapse"
+            data-bs-toggle= "collapse"
             aria-controls="navbarSupportedContent"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-label="Toggle navigation"
-
           >
-            {toggle === true ? (
-              <>
               
-                <span className="navbar-toggler-icon" onClick={()=>{setToggle(false)}}> </span>
-              </>
-            ) : (
-              <>
-                <span className="navbar-toggler-icon" > </span>{" "}
-              </>
-            )}
+                <span className="navbar-toggler-icon"> </span>
+      
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {toggle === true ? (
+
+
+          <div className="collapse navbar-collapse panel-collapse" id= "navbarSupportedContent">
               <>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
                   <li className="nav-item">
-                    <a
-                      className="nav-link animationtop "
-                      // aria-current="page"
-                      href="#header"
-                    >
-                      Home
-                    </a>
+                   <Link to='header' smooth={true} offset={0} duration={500}> Home</Link>
                   </li>
                   <li className="nav-item" >
-                    <a className="nav-link animationtop " href="#about">
-                      About
-                    </a>
+                  <Link to='about' smooth={true} offset={0} duration={500}> About</Link>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link   animationtop " href="#education2">
-                      Education
-                    </a>
+                  <Link to='education2' smooth={true} offset={0} duration={500}> Education</Link>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link   animationtop " href="#skill2">
-                      Skills
-                    </a>
+                  <Link to='skill2' smooth={true} offset={0} duration={500}> Skills</Link>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link  animationtop" target="_blank" href="/myworks">
-                      My Works
-                    </a>
+                  <Link to='/myworks' smooth={true} offset={0} duration={500}> MyWorks</Link>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link  animationtop" href="#ContactMe2">
-                      Contact Me
-                    </a>
+                  <Link to='ContactMe2' smooth={true} offset={0} duration={500}> ContactMe</Link>
                   </li>
 
                 </ul>
               </>
-            ) : (
-              <></>
-            )}
           </div>
         </div>
       </nav>

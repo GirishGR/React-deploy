@@ -7,16 +7,16 @@ import Education from './Education';
 import Footer from './Footer';
 import Skills from './Skills';
 import AboutMe from './AboutMe';
-// import Navigationbar from './NavigationBar';
-import Navbar from './Navbar';
+import Navigationbar from './NavigationBar';
+// import Navbar from './Navbar';
 // import Contact from './Contact';
 
 
 
 const Home = () => {
   return <>
-      <Navbar/>
-        {/* <Navigationbar/> */}
+      {/* <Navbar/> */}
+        <Navigationbar/>
       <Header/>
       <AboutMe/>
       <Education/>
