@@ -158,6 +158,11 @@ color: #74446d;
       font-size: 1.9rem;
       color: #ff00ee;
     }
+
+    .socialsIcons2:hover{
+      color: #976394;
+  
+    }
     
 
 
@@ -200,6 +205,10 @@ filter: drop-shadow(0 0 7rem #ff00ee);
       margin: 0.75rem;
       font-size: 1.7rem;
       color: #ff00ee;
+    }
+
+    .socialsIcons:hover{
+      color: #976394;
     }
 
 
@@ -319,7 +328,8 @@ filter: drop-shadow(0 0 7rem #ff00ee);
 }
 
 .button:hover{
-  filter: drop-shadow(0 0 2rem #ff00ee);
+  background: #ff00ee;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .button::before{
@@ -626,3 +636,6 @@ padding: 0;
   display: flex;
   flex-direction: column;
 }
+
+
+

@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Skills from './Skills';
 import AboutMe from './AboutMe';
 import Navigationbar from './NavigationBar';
+import ContactEmail from './ContactEmail';
 // import ContactMe2 from './ContactMe2';
 // import Navbar from './Navbar';
 // import Contact from './Contact';
@@ -22,8 +23,9 @@ const Home = () => {
       <AboutMe/>
       <Education/>
       <Skills/>
-      <ContactMe/>
+      {/* <ContactMe/> */}
       {/* <ContactMe2/> */}
+      <ContactEmail/>
       <Footer/> 
 
      

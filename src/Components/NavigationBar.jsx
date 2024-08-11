@@ -8,9 +8,9 @@ let Navigationbar = () => {
 
     return (
       
-     <div className="container">
-          <Navbar collapseOnSelect expand="sm" bg="" variant="dark">
-          <Navbar.Brand  className="NavbarContainer animationleft m-0" href="#">Girish G R</Navbar.Brand>
+
+          <Navbar collapseOnSelect expand="sm"  variant="dark">
+          <Navbar.Brand  className="NavbarContainer animationleft ms-3" href="#">Girish G R</Navbar.Brand>
             <Navbar.Toggle className="NavbarToggler animationright" aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav>
@@ -25,7 +25,7 @@ let Navigationbar = () => {
             </Navbar.Collapse>     
         </Navbar>
 
-        </div>
+
 
    
     );
