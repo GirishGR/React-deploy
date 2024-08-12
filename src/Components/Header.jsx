@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -40,7 +41,7 @@ return<>
             <p className="left-section3 animationbuttom">Hi, I'm Girish, a Finance Professional and an aspiring web developer with a passion for creating engaging and user-friendly web experiences. With a core knowledge in frontend development,I am looking for an opportunity in the profession of developing web applications that solve real-world problems.</p>
   
             <button className="button me-2" type="submit">  
-            <a href="#ContactMe2" className="nav-link active about" aria-current="page" id='about'>Hire Me</a>
+            <Link to='ContactMe' smooth={true} duration={1000} offset={-150} className="nav-link active about" aria-current="page" >Hire Me</Link>
              </button>
             <button  className="button " type="submit" id="DownloadCV" onClick={()=>{downCv()}}>Download CV</button>
             </div>

@@ -14,12 +14,12 @@ let Navigationbar = () => {
             <Navbar.Toggle className="NavbarToggler animationright" aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav>
-                     <NavLink  className="NavbarContainer animationtop" eventKey="1" as={Link}  to="header" smooth={true} offset={0} duration={500}>Home</NavLink>
-                    <NavLink className="NavbarContainer animationtop"  eventKey="2" as={Link} to="about" smooth={true} offset={0} duration={500}>About</NavLink>
-                    <NavLink className="NavbarContainer animationtop"  eventKey="3" as={Link} to="education2" smooth={true} offset={0} duration={500}>Education</NavLink>
-                    <NavLink className="NavbarContainer animationtop" eventKey="4" as={Link} to="skill2" smooth={true} offset={0} duration={500}>Skills</NavLink>
+                     <NavLink  className="NavbarContainer animationtop" eventKey="1" as={Link}  to="header" smooth={true} offset={0} duration={1500}>Home</NavLink>
+                    <NavLink className="NavbarContainer animationtop"  eventKey="2" as={Link} to="about" smooth={true} offset={50} duration={700}>About</NavLink>
+                    <NavLink className="NavbarContainer animationtop"  eventKey="3" as={Link} to="education" smooth={true} offset={-50} duration={1000}>Education</NavLink>
+                    <NavLink className="NavbarContainer animationtop" eventKey="4" as={Link} to="skills" smooth={true} offset={-70} duration={1000}>Skills</NavLink>
                     {/* <NavLink className="NavbarContainer animationtop" eventKey="4" as={Link} to="/myworks" smooth={true} offset={0} duration={500}>MyWorks</NavLink> */}
-                    <NavLink className="NavbarContainer animationtop" eventKey="5" as={Link} to="ContactMe2" smooth={true} offset={0} duration={500}>ContactMe</NavLink>
+                    <NavLink className="NavbarContainer animationtop" eventKey="5" as={Link} to="ContactMe" smooth={true} offset={-150} duration={1200}>ContactMe</NavLink>
 
                 </Nav>
             </Navbar.Collapse>     

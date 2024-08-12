@@ -4,7 +4,7 @@ function Education() {
 
   return<>
 
-  <div className="container goto" id='education'>
+  <div className="container goto " id='education'>
 
 <div className="row EducationExp">
 <h1 className="mb-5 mt-5  animationtop"> Education And Experience</h1>
@@ -54,10 +54,10 @@ function Education() {
 
 
   <div className="text-start"><i className="bi bi-calendar-check-fill EducationIcon"></i></div>
-<div className="MBA text-start">
+<div className="MBA text-start mb-5">
   <small className="TextAll">Jan-2017 to July-2022</small>
   <h5 className="TextAll">ABB Global Business Services</h5>
-  <h6 className="TextAll" id='skill2'>Accounting and Reporting Specialist</h6>
+  <h6 className="TextAll">Accounting and Reporting Specialist</h6>
 </div>
       </div>
     </div>

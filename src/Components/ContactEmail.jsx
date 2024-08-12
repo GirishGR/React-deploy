@@ -55,19 +55,19 @@ function ContactEmail() {
 
         <form onSubmit={onSubmit}>
           <div className="row justify-content-center">
-            <div className="col-lg-5 col-11 ContactMe ">
+            <div className="col-lg-5 col-11 ContactMe">
               <input
                 type="text"
                 className="form-control"
                 name="name"
-                placeholder="Please enter your name"
+                placeholder="Enter your name"
                 required
               />
               <p className="FormMsgs"></p>
               <input
                 type="tel"
                 name="mobile"
-                placeholder="Please enter mobile number"
+                placeholder="Enter mobile number"
                 className="form-control"
                 required
               />
@@ -79,14 +79,14 @@ function ContactEmail() {
                 type="email"
                 name="email"
                 className="form-control"
-                placeholder="Please enter email"
+                placeholder="Enter email"
                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                 required
               />
               <p className="FormMsgs"></p>
               <input
                 type="text"
-                placeholder="Please enter subject"
+                placeholder="Enter subject"
                 name="subject"
                 className="form-control"
                 required
@@ -99,7 +99,7 @@ function ContactEmail() {
                 name="message"
                 rows={8}
                 className="form-control"
-                placeholder="Please type in your message"
+                placeholder="Enter your message"
                 required
               ></textarea>
               <p className="FormMsgs text-center"></p>

@@ -1,4 +1,5 @@
 import "./Portfolio.css";
+import { Link } from "react-scroll";
 
 let Footer = () => {
   return (
@@ -15,7 +16,7 @@ let Footer = () => {
             >
 
               
-              Home/Top
+             <Link to="header" smooth={true} duration={2000}> Home/Top </Link>
             </a>
           </div>
         </div>

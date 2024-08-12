@@ -95,15 +95,17 @@ font-family: sans-serif;
 
   /* Contact ME: */
 
+
   .ContactMe input{
     height: 3rem;
-    /* width: 21rem; */
+    /* width: 85%; */
   border-radius: 20px;
   border: 1px solid #ff00ee;
   background: rgb(40, 40, 40);
   opacity: 1;
   color: white;
-  /* margin-left: 1rem; */
+  
+
   }
 
 
@@ -361,7 +363,6 @@ font-weight: 700;
   /* margin-top: 8rem; */
 /* margin: 3.7rem; */
 }
-
 
 
 .Skill1{
