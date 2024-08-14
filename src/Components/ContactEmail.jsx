@@ -52,67 +52,82 @@ function ContactEmail() {
     <>
       <div className="container animationtop">
         <h1 className="mt-5 mb-4 ">Contact Me</h1>
+        <div className="row justify-content-center">
+              <div className="col-lg-5 col-md-5 col-11 contact-container">
 
-        <form onSubmit={onSubmit}>
-          <div className="row justify-content-center">
-            <div className="col-lg-5 col-11 ContactMe">
-              <input
-                type="text"
-                className="form-control"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
-              <p className="FormMsgs"></p>
-              <input
-                type="tel"
-                name="mobile"
-                placeholder="Enter mobile number"
-                className="form-control"
-                required
-              />
-              <p className="FormMsgs"></p>
-            </div>
+                 <h3>Thanks for visiting my Portfolio site!</h3>
+                <p>I am open for opportunities. if you are interested with my CV,
+                   please get in touch with below contact details.</p>
 
-            <div className="col-lg-5 col-11 ContactMe">
-              <input
-                type="email"
-                name="email"
-                className="form-control"
-                placeholder="Enter email"
-               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                required
-              />
-              <p className="FormMsgs"></p>
-              <input
-                type="text"
-                placeholder="Enter subject"
-                name="subject"
-                className="form-control"
-                required
-              />
-              <p className="FormMsgs"></p>
-            </div>
+                <p><i class="bi bi-envelope-at-fill"></i> : grgirish33@gmail.com</p>
+                <p><i class="bi bi-telephone-forward-fill"></i>: +91-9513300588</p>
 
-            <div className="col-lg-7 col-11 ContactMe">
-              <textarea
-                name="message"
-                rows={8}
-                className="form-control"
-                placeholder="Enter your message"
-                required
-              ></textarea>
-              <p className="FormMsgs text-center"></p>
-            </div>
-            <div className="submitButton">
-              {/* <input type="submit" value="Send Message" className='button3 align-content-center' onClick={handleSubmit}/> */}
-              <button className="button">Send Message</button>
-            </div>
-            <p className="FormMsgs mb-0 mt-1 text-center">{result}</p>
-          </div>
-          {/* <pre className='text-center'>{JSON.stringify(result)}</pre> */}
-        </form>
+                <h3 className="mt-4 mb-0">Or Leave a message <i class="bi bi-arrow-right"></i></h3>
 
+              </div>
+
+              <div className="col-lg-5 col-md-5 col-11 ContactMe contact-container">
+
+              <form onSubmit={onSubmit}>
+    
+           <input
+             type="text"
+             className="form-control"
+             name="name"
+             placeholder="Enter your name"
+             required
+           />
+           <p className="FormMsgs"></p>
+           <input
+             type="tel"
+             name="mobile"
+             placeholder="Enter mobile number"
+             className="form-control"
+             required
+           />
+           <p className="FormMsgs"></p>
+      
+
+        
+           <input
+             type="email"
+             name="email"
+             className="form-control"
+             placeholder="Enter email"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+             required
+           />
+           <p className="FormMsgs"></p>
+           <input
+             type="text"
+             placeholder="Enter subject"
+             name="subject"
+             className="form-control"
+             required
+           />
+           <p className="FormMsgs"></p>
+      
+
+        
+           <textarea
+             name="message"
+             rows={6}
+             className="form-control ContactMe"
+             placeholder="Enter your message"
+             required
+           ></textarea>
+           <p className="FormMsgs text-center"></p>
+        
+         <div className="submitButton">
+           {/* <input type="submit" value="Send Message" className='button3 align-content-center' onClick={handleSubmit}/> */}
+           <button className="button">Send Message</button>
+         </div>
+         <p className="FormMsgs mb-0 mt-1 text-center">{result}</p>
+      
+       {/* <pre className='text-center'>{JSON.stringify(result)}</pre> */}
+     </form>
+              </div>
+        </div>
         <Modal
           isOpen={isOpen}
           contentLabel="Example Modal"

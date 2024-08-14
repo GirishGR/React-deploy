@@ -5,7 +5,7 @@ function Skills() {
 
   return <>
 
-    <div className="container" id="skills">
+    <div className="container skill-container" id="skills">
       <h1 className="mb-5 mt-5 animationtop">My Skills</h1>
       <div className="row Skill1">
 
