@@ -2,27 +2,27 @@
 // import { Route, Routes } from 'react-router-dom';
 // import Home from './Home';
 
-import { useRef } from "react";
+// import { useRef } from "react";
 
 
 let Mywork = ()=>{
 
-  const slider = useRef();
-  let tx = 0;
+  // const slider = useRef();
+  // let tx = 0;
   
-  const slideForward = ()=>{
-      if(tx > -50){
-        tx-=20;
-      }
-      slider.current.style.transform = `translateX(${tx}%)`
-  }
+  // const slideForward = ()=>{
+  //     if(tx > -50){
+  //       tx-=20;
+  //     }
+  //     slider.current.style.transform = `translateX(${tx}%)`
+  // }
   
-  const slideBackword = () =>{
-    if(tx < 0){
-      tx+=20;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`
-  }
+  // const slideBackword = () =>{
+  //   if(tx < 0){
+  //     tx+=20;
+  //   }
+  //   slider.current.style.transform = `translateX(${tx}%)`
+  // }
 
 
   return<>
@@ -45,18 +45,18 @@ let Mywork = ()=>{
 
 
   
-<div className="container myWork-container2">
+<div className="container" data-aos="ease-in-out">
  
  <h1 className="text-center mt-5 mb-4">My works</h1>
- <h3 className="text-center">Non Responsive Clone Designs</h3>
+ <h3 className="text-center mb-4">Non Responsive Clone Designs</h3>
 
- <div className="row justify-content-center myWork-container" ref={slider}>
+ <div className="row justify-content-center" >
 
- <i className="bi bi-arrow-right-circle-fill nextBtn" onClick={slideForward}></i>
+ {/* <i className="bi bi-arrow-right-circle-fill nextBtn" ></i>
 
-<i className="bi bi-arrow-left-circle-fill backBtn" onClick={slideBackword}></i>
+<i className="bi bi-arrow-left-circle-fill backBtn" ></i> */}
  
-   <div className="col-lg-5  col-md-5 col-11 myworks">
+   <div className="col-lg-3 col-md-3 col-5 mb-4">
        
 
        <div className="netflix-header">
@@ -72,7 +72,7 @@ let Mywork = ()=>{
  
    </div>
  
-   <div className="col-lg-5 col-md-5 col-11 myworks">
+   <div className="col-lg-3 col-md-3 col-5 mb-4">
  
    <div className="netflix-header">
        <p className="text-center">Amazon Clone - HTML & CSS -  <a href="https://amazon-clone-eta-rosy.vercel.app/">Click</a></p>
@@ -85,7 +85,7 @@ let Mywork = ()=>{
        </div>
    </div>
  
-   <div className="col-lg-5 col-md-5 col-11 myworks">
+   <div className="col-lg-3 col-md-3 col-5 mb-4">
    <div className="netflix-header">
        <p className="text-center">Restaurant Site View - HTML & CSS -  <a href="https://amazon-clone-eta-rosy.vercel.app/">Click</a></p>
        </div>
@@ -98,9 +98,9 @@ let Mywork = ()=>{
  
  </div>
 
- <div className="col-lg-5 col-md-5 col-11 myworks">
+ <div className="col-lg-3 col-md-3 col-5 mb-4">
    <div className="netflix-header">
-       <p className="text-center">Edu site - HTML & CSS -  <a href="https://edusity-sooty-eight.vercel.app/">Click</a></p>
+       <p className="text-center">Edusity - HTML & CSS -  <a href="https://edusity-sooty-eight.vercel.app/">Click</a></p>
        </div>
  
        <div className="netflix-clone">
@@ -112,9 +112,8 @@ let Mywork = ()=>{
  </div>
  {/* <div className="col-lg-5 m-2 col-md-5 col-11 myworks">
  
- 
  </div> */}
- 
+  
  </div>
  </div>
   

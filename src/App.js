@@ -6,11 +6,10 @@ import Mywork from './Components/Mywork';
 
 
 function App() {
-  return (
-
-    
-<><Routes>
-
+  return (<>
+  
+  
+  <Routes>
 <Route path="/" element={<Home/>}></Route>
 
  {/* <Route path='/myworks' element={<Mywork/>}/> */}

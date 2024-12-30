@@ -9,7 +9,7 @@ function AboutMe(){
 
   return<>
   
-  <div className="container text-center AboutMe " id='AboutMe'>
+  <div className="container text-center AboutMe" data-aos="ease-in-out" id='AboutMe'>
   <h1 className='mt-5 animationtop'>About Me</h1>
 
     <div className="row justify-content-md-center">
@@ -20,12 +20,12 @@ function AboutMe(){
         </div>
         </div> 
 
-        <div className="col col-lg-12 col-md-12 AboutMe2">
+        <div className="col col-lg-12 col-md-12 AboutMe2" data-aos="ease-in-out">
      
         <h3 className=" mt-5 AbtMe2 animationleft" >Aspiring Web Developer with Front-End Skills</h3>
         <h5 className="AbtMe3 mt-3 animationright"> My journey in web development began with a curiosity to understand how technology shapes our online experiences. Over the months, I've honed my skills in front-end skills like HTML, CSS, JAVASCRIPT, REACTJS, embracing new technologies and best practices along the way.</h5>
         
-        <div className="Socials mt-4 mb-3">
+        <div className="Socials mt-4 mb-3" data-aos="ease-in-out">
           
           <a href="https://github.com/GirishGR" ><i className="bi bi-github socialsIcons"></i></a>
 
@@ -47,8 +47,7 @@ function AboutMe(){
         <div className="container text-center ">
           <h2><b className=''>Personal Infos</b></h2>
           <div className="row justify-content-md-center PersonalInfo">
-            <div className="col col-lg-3 col-md-4 text-start animationimage
-            ">
+            <div className="col col-lg-3 col-md-4 text-start animationimage">
               <p>Name : <b>Girish GR</b></p>
               <p>Age : <b>29 years</b></p>
               <p>Nationality : <b>Indian</b></p>
@@ -68,11 +67,11 @@ function AboutMe(){
             </div>
           </div>
 
-      </div>
-      <button type="button" className="mt-3 mb-5 button" id="KnowMore" onClick={()=>{setKnowMore(false)}} > Close</button>
+      </div >
+      <button data-aos="ease-in-out" type="button" className="mt-3 mb-5 button" id="KnowMore" onClick={()=>{setKnowMore(false)}} > Close</button>
 
-    </div> </> : <>
-    <button type="button" className=" mt-1 mb-5 button" id="education2" onClick={()=>{setKnowMore(true)}} >Personal Info</button>
+    </div > </> : <>
+    <button data-aos="ease-in-out" type="button" className=" mt-1 mb-5 button" id="education2" onClick={()=>{setKnowMore(true)}} >Personal Info</button>
     </>
 }
   </div>

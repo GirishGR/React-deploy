@@ -50,10 +50,10 @@ function ContactEmail() {
 
   return (
     <>
-      <div className="container animationtop">
-        <h1 className="mt-5 mb-4 ">Contact Me</h1>
+      <div className="container animationtop" data-aos="ease-in-out">
+        <h1 className="mt-5 mb-4" data-aos="ease-in-out">Contact Me</h1>
         <div className="row justify-content-center">
-              <div className="col-lg-5 col-md-5 col-11 contact-container">
+              <div className="col-lg-5 col-md-5 col-11 contact-container" data-aos="ease-in-out">
 
                  <h3>Thanks for visiting my Portfolio site!</h3>
                 <p>I am open for opportunities. if you are interested with my CV,
@@ -66,7 +66,7 @@ function ContactEmail() {
 
               </div>
 
-              <div className="col-lg-5 col-md-5 col-11 ContactMe contact-container">
+              <div className="col-lg-5 col-md-5 col-11 ContactMe contact-container" data-aos="ease-in-out">
 
               <form onSubmit={onSubmit}>
     
@@ -146,7 +146,7 @@ function ContactEmail() {
         </Modal>
       </div>
 
-      <div className="row">
+      <div className="row" data-aos="ease-in-out">
         <div className="col mt-3">
           <div className="Socials2 animationbuttom">
             <a

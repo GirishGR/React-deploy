@@ -18,10 +18,10 @@ let Header = () =>{
 
 return<>
 
-<div className="container text-center" id="header">
+<div className="container text-center"  id="header">
   <div className="row ">
 
-  <div className="col col-lg-5 col-md-10 HeaderContainers right-section ">
+  <div className="col col-lg-5 col-md-10 HeaderContainers right-section " >
 <div className="Header animationimage mt-5">
   <dotlottie-player src="https://lottie.host/74476745-7ed6-4d1e-8d30-09e7346ea09b/Qd8fC619Ye.json"
       background="transparent" loop autoplay style={{height:"350px"}}></dotlottie-player>
@@ -29,7 +29,7 @@ return<>
 
   </div>
 
-  <div className="col col-lg-7 col-md-10 left-section HeaderContainers ">
+  <div className="col col-lg-7 col-md-10 left-section HeaderContainers" >
     <div className="Left-section2 mb-5 ">
   <p className='mt-5 animationleft'>
 

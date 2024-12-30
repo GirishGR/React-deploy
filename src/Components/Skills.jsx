@@ -5,12 +5,12 @@ function Skills() {
 
   return <>
 
-    <div className="container skill-container" id="skills">
+    <div className="container skill-container"  id="skills" >
       <h1 className="mb-5 mt-5 animationtop">My Skills</h1>
       <div className="row Skill1">
 
         {/* FRONT END DETAILS */}
-        <div className="col col-lg-5 col-md-5 col-11 Skills animationleft">
+        <div className="col col-lg-5 col-md-5 col-11 Skills animationleft" >
 
           <h4 className="text-center mt-4">Front-End</h4>
           <div className="FrontEndSkills ">
@@ -42,11 +42,11 @@ function Skills() {
 
             {/* BACKEND DETAILS */}
 
-        <div className="col col-lg-5 col-md-5 col-11 Skills animationright">
+        <div className="col col-lg-5 col-md-5 col-11 Skills animationright" >
 
           <h4 className="text-center mt-4">BackEnd & DB</h4>
 
-          <div className="FrontEndSkills">
+          <div className="FrontEndSkills" >
             <h5 className="text-start">NodeJs</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
               <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }}></div>

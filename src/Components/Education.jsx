@@ -1,10 +1,11 @@
+import Certification from './Certification';
 import './Portfolio.css'
 
 function Education() {
 
   return<>
 
-  <div className="container goto " id='education'>
+  <div className="container goto" id='education' >
 
 <div className="row EducationExp">
 <h1 className="mb-5 mt-5  animationtop"> Education And Experience</h1>
@@ -39,7 +40,7 @@ function Education() {
 </div>
 
 
-<div className="col col-lg-5 col-md-10  col-sm-10 EduEx animationright">
+<div className="col col-lg-5 col-md-10  col-sm-10 EduEx animationright" >
 
 <h4 className='headers  mb-3'>Experience</h4>
   
@@ -61,6 +62,7 @@ function Education() {
 </div>
       </div>
     </div>
+    <Certification/>
     </div>
 
 </>

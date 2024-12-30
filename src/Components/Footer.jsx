@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 let Footer = () => {
   return (
     <>
-      <div className="container text-center" id="footer">
+      <div className="container text-center" id="footer" >
         <div className="row justify-content-md-center">
           <div className="col Footer mt-4">
 
