@@ -35,7 +35,7 @@ const Certification = () => {
       <h2 className="text-center fw-bolder mt-3 mb-4 ">Certification </h2>
 
       <div className="row justify-content-center ">
-        <div className="col-11 allEdureka mb-5">
+        <div className="col-11 mb-4">
           <div className="edureka flex mb-3 mt-4">
             <h5>
               1. Front-End Web Developer Certification Course from Edureka
@@ -48,7 +48,7 @@ const Certification = () => {
               <p className="mx-4">
                 * Web Developer Certification Course from Edureka
               </p>{" "}
-; 
+
   <h5> <i class="bi bi-box-arrow-down " style={{color:'#ff00ee'}} onClick={()=>{downWebDCert()}}></i></h5>
             </div>
             <div className="edureka">
