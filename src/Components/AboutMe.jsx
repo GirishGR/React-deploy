@@ -22,8 +22,8 @@ function AboutMe(){
 
         <div className="col col-lg-12 col-md-12 AboutMe2" data-aos="ease-in-out">
      
-        <h3 className=" mt-5 AbtMe2 animationleft" >Aspiring Web Developer with Front-End Skills</h3>
-        <h5 className="AbtMe3 mt-3 animationright"> My journey in web development began with a curiosity to understand how technology shapes our online experiences. Over the months, I've honed my skills in front-end skills like HTML, CSS, JAVASCRIPT, REACTJS, embracing new technologies and best practices along the way.</h5>
+        <h3 className=" mt-5 AbtMe2 animationleft" >Aspiring Web Developer with MERN Stack Skills</h3>
+        <h5 className="AbtMe3 mt-3 animationright"> My journey in web development began with a curiosity to understand how technology shapes our online experiences. Over the months, I've honed my skills in MERN skills with HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, EXPRESS embracing new technologies and best practices along the way.</h5>
         
         <div className="Socials mt-4 mb-3" data-aos="ease-in-out">
           

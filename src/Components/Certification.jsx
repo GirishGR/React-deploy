@@ -30,6 +30,12 @@ const Certification = () => {
          aTag.remove();
         }
 
+        let fullStack = ()=>{
+
+          alert("Certificate will be added shortly!")
+
+        }
+
   return (
     <div className="container ">
       <h2 className="text-center fw-bolder mt-3 mb-4 ">Certification </h2>
@@ -66,7 +72,7 @@ const Certification = () => {
             <h5>
               2. Full Stack Certification Course from ProStack Academy
             </h5>
-            <h5> <i class="bi bi-box-arrow-down " style={{color:'#ff00ee'}}></i></h5>
+            <h5> <i class="bi bi-box-arrow-down " style={{color:'#ff00ee'}} onClick={fullStack}></i></h5>
           </div>
         </div>
       </div>
