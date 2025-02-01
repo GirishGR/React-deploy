@@ -100,12 +100,12 @@ let Mywork = ()=>{
 
  <div className="col-lg-3 col-md-3 col-5 mb-4">
    <div className="netflix-header">
-       <p className="text-center">Edusity - HTML & CSS -  <a href="https://edusity-sooty-eight.vercel.app/">Click</a></p>
+       <p className="text-center">Edusity - HTML & CSS -  <a href="https://edusity-three-tau.vercel.app/">Click</a></p>
        </div>
  
        <div className="netflix-clone">
          
-       <a href="https://edusity-sooty-eight.vercel.app/"><iframe className="girishportfolio" title="restaurant" src="https://edusity-sooty-eight.vercel.app/" frameborder=""></iframe></a>
+       <a href="https://edusity-three-tau.vercel.app/"><iframe className="girishportfolio" title="restaurant" src="https://edusity-sooty-eight.vercel.app/" frameborder=""></iframe></a>
       
        </div>
  

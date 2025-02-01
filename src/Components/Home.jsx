@@ -10,6 +10,7 @@ import AboutMe from './AboutMe';
 import Navigationbar from './NavigationBar';
 import ContactEmail from './ContactEmail';
 import Mywork from './Mywork';
+import SidebarNav from './Sidebar';
 // import ContactMe2 from './ContactMe2';
 // import Navbar from './Navbar';
 // import Contact from './Contact';
@@ -20,6 +21,7 @@ const Home = () => {
   return <>
       {/* <Navbar/> */}
         <Navigationbar/>
+       {/* <SidebarNav/> */}
       <Header/>
       <AboutMe/>
       <Education/>

@@ -9,30 +9,58 @@ let Navigationbar = () => {
     return (
       
 
+
+        
+
           <Navbar collapseOnSelect expand="sm"  variant="dark">
           <Navbar.Brand  className="NavbarContainer animationleft ms-3" href="#">Girish G R</Navbar.Brand>
             <Navbar.Toggle className="NavbarToggler animationright" aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav>
-                     <NavLink  className="NavbarContainer animationtop" eventKey="1" as={Link}  to="header" smooth={true} offset={0} duration={500}>Home</NavLink>
-                    <NavLink className="NavbarContainer animationtop"  eventKey="2" as={Link} to="about" smooth={true} offset={50} duration={500}>About</NavLink>
-                    <NavLink className="NavbarContainer animationtop"  eventKey="3" as={Link} to="education" smooth={true} offset={-50} duration={500}>Education</NavLink>
-                    <NavLink className="NavbarContainer animationtop" eventKey="4" as={Link} to="skills" smooth={true} offset={-70} duration={500}>Skills</NavLink>
+                     <NavLink  className="NavbarContainer animationtop" eventKey="1" as={Link}  to="header" smooth={true} offset={0} duration={200}>Home</NavLink>
+                    <NavLink className="NavbarContainer animationtop"  eventKey="2" as={Link} to="about" smooth={true} offset={50} duration={200}>About</NavLink>
+                    <NavLink className="NavbarContainer animationtop"  eventKey="3" as={Link} to="education" smooth={true} offset={-50} duration={200}>Education</NavLink>
+                    <NavLink className="NavbarContainer animationtop" eventKey="4" as={Link} to="skills" smooth={true} offset={-70} duration={200}>Skills</NavLink>
                     {/* <NavLink className="NavbarContainer animationtop" eventKey="4" to="/myworks" >MyWorks</NavLink> */}
 
-                    <NavLink className="NavbarContainer animationtop" eventKey="5" as={Link} to="ContactMe" smooth={true} offset={-150} duration={500}>ContactMe</NavLink>
+                    <NavLink className="NavbarContainer animationtop" eventKey="5" as={Link} to="ContactMe" smooth={true} offset={-150} duration={200}>ContactMe</NavLink>
 
                 </Nav>
             </Navbar.Collapse>     
         </Navbar>
 
-
-
-   
-    );
+);
 }
 
 export default Navigationbar;
+
+
+/*
+
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { Link } from 'react-router-dom';
+
+<Sidebar>
+  <Menu
+    menuItemStyles={{
+      button: {
+        // the active class will be added automatically by react router
+        // so we can use it to style the active menu item
+        [`&.active`]: {
+          backgroundColor: '#13395e',
+          color: '#b6c8d9',
+        },
+      },
+    }}
+  >
+    <MenuItem component={<Link to="/documentation" />}> Documentation</MenuItem>
+    <MenuItem component={<Link to="/calendar" />}> Calendar</MenuItem>
+    <MenuItem component={<Link to="/e-commerce" />}> E-commerce</MenuItem>
+  </Menu>
+</Sidebar>;
+
+
+   
 
 
 
@@ -56,8 +84,6 @@ export default Navigationbar;
 //       </button> </div></> 
 
 
-
-//       } */}
 
 
 //           <button         
@@ -123,4 +149,6 @@ export default Navigationbar;
 //           </div>
 //         </div>
 //         </nav>
+
+*/
       
