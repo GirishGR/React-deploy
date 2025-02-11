@@ -31,9 +31,13 @@ const Certification = () => {
         }
 
         let fullStack = ()=>{
-
-          alert("Certificate will be added shortly!")
-
+          const fileName = "ProStackMERN.jpg";
+         const aTag = document.createElement('a');
+         aTag.href = fileName;
+         aTag.download = 'ProStackMERN.jpg';
+         document.body.appendChild(aTag);
+         aTag.click();
+         aTag.remove();
         }
 
   return (
