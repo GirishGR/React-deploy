@@ -1,17 +1,22 @@
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll"
-
 import './Portfolio.css';
+import { useNavigate } from "react-router-dom";
 
 let Navigationbar = () => {
+
+
+      let navigate = useNavigate();
 
     return (
       
 
           <Navbar collapseOnSelect expand="sm"  variant="dark">
           <Navbar.Brand  className="NavbarContainer animationleft ms-3" href="#">Girish G R</Navbar.Brand>
-            <Navbar.Toggle className="NavbarToggler animationright" aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
+            <Navbar.Toggle className="NavbarToggler animationright" aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" onClick={navigate("#offcanvasExample")} />
+
+            
             <Navbar.Collapse id="navbarScroll">
                 <Nav>
                      <NavLink  className="NavbarContainer animationtop" eventKey="1" as={Link}  to="header" smooth={true} offset={0} duration={200}>Home</NavLink>

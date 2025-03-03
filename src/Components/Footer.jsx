@@ -16,7 +16,7 @@ let Footer = () => {
             >
 
               
-             <Link to="header" smooth={true} duration={2000}> Home/Top </Link>
+             <Link to="header" smooth={true} duration={500}> Home/Top </Link>
             </a>
           </div>
         </div>

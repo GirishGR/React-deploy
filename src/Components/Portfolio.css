@@ -462,6 +462,7 @@ font-weight: 700;
 .NavbarContainer{
   margin-left:1.5rem ;
   font-weight: 600;
+  cursor: pointer;
 }
 
 
@@ -680,4 +681,8 @@ position: relative;
 
 .edureka-cert{
   visibility: hidden;
+}
+
+.edureka i {
+  cursor: pointer;
 }

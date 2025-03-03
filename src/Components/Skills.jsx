@@ -49,25 +49,25 @@ function Skills() {
           <div className="FrontEndSkills" >
             <h5 className="text-start">NodeJs</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }}></div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "50%" }}></div>
             </div></div>
 
           <div className="FrontEndSkills">
             <h5 className="text-start">ExpressJs</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }}></div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "50%" }}></div>
             </div></div>
 
           <div className="FrontEndSkills">
             <h5 className="text-start">MySQL</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }}></div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "50%" }}></div>
             </div></div>
 
           <div className="FrontEndSkills">
             <h5 className="text-start">MongoDB</h5>
             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: 0 }} ></div>
+              <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "50%" }} ></div>
             </div></div>
 
 

@@ -50,6 +50,7 @@ const Certification = () => {
             <h5>
               1. Front-End Web Developer Certification Course from Edureka
             </h5>
+            
             <h5 onClick={handleView}><i class="bi bi-eye-fill" style={{color:'#ff00ee'}}></i></h5>
           </div>
 
@@ -59,7 +60,7 @@ const Certification = () => {
                 * Web Developer Certification Course from Edureka
               </p>{" "}
 
-  <h5> <i class="bi bi-box-arrow-down " style={{color:'#ff00ee'}} onClick={()=>{downWebDCert()}}></i></h5>
+  <h5> <i class="bi bi-box-arrow-down" style={{color:'#ff00ee'}} onClick={()=>{downWebDCert()}}></i></h5>
             </div>
             <div className="edureka">
               {" "}
@@ -71,6 +72,9 @@ const Certification = () => {
               </button>
             </div>
           </div>
+          
+
+          
 
           <div className="edureka flex mt-2 mb-4">
             <h5>

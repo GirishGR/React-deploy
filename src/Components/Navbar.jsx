@@ -3,86 +3,39 @@ import "./Portfolio.css";
 import React, { useState } from "react";
 
 function Navbar() {
-  let [toggle, setToggle] = useState(true);
 
-  let handleToggle = () => {
-    setToggle(!toggle);
-  };
 
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg position-fixed"
-        toggle={toggle}
-        id="navbarmanual"
-        data-bs-theme="dark"
-      >
-        <div className="container togglerIcon">
-          
-          <a className="navbar-brand WebDeveloper animationleft" href="/header">
-            Girish
-          </a>
-          {/* {
-          toggle == true ? <>   <div>
-        
-        <button  className="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" onblur={()=>{setToggle(false)}}></span> </button> </div> </> : <> <div> <button  className="navbar-toggler" type="button" >
-          <span className="navbar-toggler-icon"data-bs-toggle="" onblur={()=>{setToggle(true)}}></span>
-      </button> </div></> 
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">navigate
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  nav button
+</button>
 
-
-
-      } */}
-
-
-          <button         
-            onClick={handleToggle}
-            className="navbar-toggler"
-            type="button"
-            data-bs-target="#navbarSupportedContent"
-            data-bs-toggle= "collapse"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-              
-                <span className="navbar-toggler-icon"> </span>
-      
-          </button>
-
-
-          <div className="collapse navbar-collapse panel-collapse" id= "navbarSupportedContent">
-              <>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarmanual2">
-                  <li className="nav-item">
-                   <Link to='header' smooth={true} offset={0} duration={500}> Home</Link>
-                  </li>
-                  <li className="nav-item" >
-                  <Link to='about' smooth={true} offset={0} duration={500}> About</Link>
-                  </li>
-
-                  <li className="nav-item">
-                  <Link to='education2' smooth={true} offset={0} duration={500}> Education</Link>
-                  </li>
-
-                  <li className="nav-item">
-                  <Link to='skill2' smooth={true} offset={0} duration={500}> Skills</Link>
-                  </li>
-
-                  <li className="nav-item">
-                  <Link to='/myworks' smooth={true} offset={0} duration={500}> MyWorks</Link>
-                  </li>
-
-                  <li className="nav-item">
-                  <Link to='ContactMe2' smooth={true} offset={0} duration={500}> ContactMe</Link>
-                  </li>
-
-                </ul>
-              </>
-          </div>
-        </div>
-      </nav>
-    </>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Girish</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
+     </>
   );
 }
 
